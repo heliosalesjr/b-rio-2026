@@ -89,7 +89,7 @@ const Mat2 = () => {
             <FaChalkboardTeacher className="text-yellow-500 text-3xl mb-4" />
             <h3 className="text-slate-700 font-bold text-lg mb-3">Metodologias e estrutura</h3>
             <p className="text-slate-700 text-sm md:text-base">
-              A proposta é aplicar metodologias ativas por meio de atividades significativas (Plano Pedagógico Didático de Apoio), organizadas em alinhamento com as quatro partes do <em>Livro do Estudante</em>.
+              A proposta é aplicar metodologias ativas por meio de atividades significativas, organizadas em alinhamento com os capítulos do <em>Livro do Estudante</em>.
             </p>
           </div>
           </div>

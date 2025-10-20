@@ -27,7 +27,7 @@ export default function ContentSection() {
           <FadeInWhenVisible>
             <Mat3 />
           </FadeInWhenVisible>
-          
+          <Mat4 />
           <FadeInWhenVisible>
             <Mat5 />
           </FadeInWhenVisible>
@@ -41,7 +41,7 @@ export default function ContentSection() {
           
           <div className="flex justify-center mt-8">
             <Button asChild>
-              <Link href="/diagnostico">Próxima Página: Diagnóstico e Encerramento</Link>
+              <Link href="/diagnostico">Próxima Página: Encerramento</Link>
             </Button>
           </div>
         </div>

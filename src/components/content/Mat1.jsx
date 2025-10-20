@@ -11,7 +11,7 @@ const Mat1 = () => {
           Conhecendo a estrutura do Livro do Estudante
         </h2>
         <p className="text-slate-700 text-sm md:text-base max-w-3xl mx-auto">
-          O Livro do Estudante aborda conteúdos do currículo de Matemática ancorados em conceitos de Educação Financeira – tais como operações com números inteiros; aumentos e descontos; interpretação de gráficos e tabelas; relação entre preço de serviços ou produtos; e grandezas como peso, tempo, área, capacidade e volume.
+          O Livro do Estudante aborda conteúdos do currículo de Matemática ancorados em conceitos de Educação Financeira – tais como números e operações, sistema de numeração, sistema monetário, números decimais, frações unitárias e coleta e classificação de dados.
         </p>
       </div>
 
@@ -52,7 +52,7 @@ const Mat1 = () => {
         </h3>
         <div className="w-full h-[800px]">
           <iframe
-            src="/sample.pdf"
+            src="/paginas_14_e_15.pdf"
             className="w-full h-full rounded-xl border"
             title="Amostra Livro do Estudante"
           ></iframe>

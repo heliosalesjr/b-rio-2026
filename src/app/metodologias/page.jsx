@@ -11,7 +11,7 @@ export default function Metodologias() {
       <ProgressBar />
       <main >
         <Hero
-                title="Metodologias"
+                title="Metodologias ativas"
                 subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
                 />
         <MetContentSection />

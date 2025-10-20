@@ -1,11 +1,9 @@
 "use client";
-import React from 'react'
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
-import { FaCalculator, FaPiggyBank } from 'react-icons/fa'
+import { FaCalculator, FaPiggyBank } from 'react-icons/fa';
 
 const EF3 = () => {
-
   const ref = useRef();
   const { markAsViewed } = useSidebar();
 
@@ -19,10 +17,7 @@ const EF3 = () => {
       { threshold: 0.5 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
+    if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, [markAsViewed]);
 
@@ -54,22 +49,26 @@ const EF3 = () => {
     [
       "Melhora a capacidade de realizar cálculos financeiros precisos.",
       "Promove a conscientização financeira e a habilidade de planejar para o futuro.",
-    ]
-  ]
+    ],
+  ];
 
   return (
-    <div ref={ref} id="ef-3" className="scroll-mt-20 bg-white p-6 md:p-10 rounded-2xl shadow-2xl overflow-x-auto">
+    <div
+      ref={ref}
+      id="ef-3"
+      className="scroll-mt-20 bg-white p-6 md:p-10 rounded-2xl shadow-2xl overflow-x-auto"
+    >
       <div className="text-center mb-10">
         <h1 className="text-3xl md:text-4xl font-bold text-slate-800 mb-2">
-            Diferenças entre Matemática Financeira e Educação Financeira
+          Diferenças entre Matemática Financeira e Educação Financeira
         </h1>
         <p className="text-slate-600 text-base md:text-lg max-w-2xl mx-auto">
-        No programa Aprendendo a Lidar com Dinheiro, como educadores(as), vocês terão a oportunidade de trabalhar com os dois conhecimentos de forma integrada.
+          No programa Aprendendo a Lidar com Dinheiro, como educadores(as), vocês terão a
+          oportunidade de trabalhar com os dois conhecimentos de forma integrada.
         </p>
-        </div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        
         {/* Títulos com ícones */}
         <div className="bg-orange-100 rounded-xl p-4 flex justify-center items-center gap-3 shadow-sm border-b-4 border-pink-400 text-center">
           <FaCalculator className="text-pink-500 text-3xl" />
@@ -84,17 +83,17 @@ const EF3 = () => {
         {/* Linhas de conteúdo */}
         {dados.map(([matematica, educacao], index) => (
           <React.Fragment key={index}>
-            <div className="bg-orange-50 p-4 rounded-lg hover:bg-orange-200/60 transition duration-300">
+            <div className="bg-orange-50 p-4 rounded-lg flex justify-center items-center text-center hover:bg-orange-200/60 transition duration-300">
               <p className="text-sm md:text-base text-slate-700">{matematica}</p>
             </div>
-            <div className="bg-blue-50 p-4 rounded-lg hover:bg-blue-200/60 transition duration-300">
+            <div className="bg-blue-50 p-4 rounded-lg flex justify-center items-center text-center hover:bg-blue-200/60 transition duration-300">
               <p className="text-sm md:text-base text-slate-700">{educacao}</p>
             </div>
           </React.Fragment>
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default EF3
+export default EF3;

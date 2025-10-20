@@ -35,9 +35,9 @@ const Mat6 = () => {
               <div className="max-w-3xl">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">Padlet</h2>
                 <p className="text-sm md:text-base text-slate-100">
-                  Uma ferramenta útil para esse registro é o <strong>PADLET</strong>, que funciona como um organizador virtual de tarefas.
-                  Ele permite criar e gerenciar murais em diversos formatos, promovendo a curiosidade, a criação e a comunicação entre os estudantes.
-                  O Padlet facilita a interação e a socialização, enriquecendo o processo de ensino-aprendizagem.
+                  Uma <strong>ferramenta útil </strong>para esse registro é o <strong>PADLET</strong>, que funciona como um <strong>organizador virtual de tarefas</strong>.
+                  Ele permite criar e gerenciar murais em diversos formatos, <strong>promovendo a curiosidade, a criação e a comunicação </strong>entre os estudantes.
+                  O Padlet facilita a interação e a socialização, <strong>enriquecendo o processo de ensino-aprendizagem</strong>.
                 </p>
               </div>
             </motion.div>
@@ -57,7 +57,7 @@ const Mat6 = () => {
           >
             <div className="relative w-full max-w-4xl h-64 sm:h-80 md:h-96 mb-4">
               <Image
-                src="/padlet_mt.png"
+                src="/padlet_exemplo.png"
                 alt="Exemplo Padlet"
                 fill
                 className="object-contain"
@@ -65,7 +65,7 @@ const Mat6 = () => {
               />
             </div>
             <p className="text-sm md:text-base max-w-xl font-medium text-white">
-              Exemplo de um Padlet criado durante a aplicação do Programa de Educação Financeira SEDUC MT 2024
+              Sugerimos que você crie um Padlet de registro para suas turmas ou escola. 
             </p>
           </motion.div>
         )}

@@ -18,7 +18,7 @@ const objetivos = [
   },
   {
     icon: <FaUsers size={32} className="text-green-500" />,
-    title: 'Diagnóstico da Turma',
+    title: 'Diagnóstico de Turma: Perfil e Conhecimentos Prévios',
     description: 'Aprender a fazer o diagnóstico do perfil da turma.'
   },
   {

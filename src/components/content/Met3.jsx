@@ -24,7 +24,7 @@ const cards = [
     color: "bg-green-100",
   },
   {
-    title: "PROBLEMAS DO MUNDO REAL",
+    title: "SITUAÇÕES DO MUNDO REAL",
     text: [
       "Projetos baseados em desafios reais",
       "Aplicação prática do conhecimento",
@@ -45,7 +45,7 @@ const cards = [
     title: "TOMADA DE DECISÃO",
     text: [
       "Planejamento e gestão de projetos",
-      "Resolução de problemas complexos",
+      "Responsabilidade nas escolhas",
     ],
     icon: CheckSquare,
     color: "bg-cyan-100",

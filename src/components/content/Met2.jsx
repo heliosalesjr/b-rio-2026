@@ -56,7 +56,7 @@ const Met2 = () => {
                 className="object-cover object-center"
                 priority
               />
-              <div className="absolute inset-0 bg-black/50 z-10" />
+              <div className="absolute inset-0 bg-black/60 z-10" />
             </motion.div>
 
             <motion.div
@@ -71,15 +71,16 @@ const Met2 = () => {
                   Aprendizagem Baseada em Projetos
                 </h2>
                 <p className="text-sm md:text-base text-slate-100">
-                  A Aprendizagem Baseada em Projetos é uma metodologia ativa que se apoia na resolução de um problema
-                  ou no desenvolvimento de um projeto que tenha relação com a vida dos estudantes fora da sala de aula.
+                  A Aprendizagem Baseada em Projetos é uma <strong>metodologia ativa</strong> que se apoia na resolução de um problema
+                  ou no desenvolvimento de um projeto que tenha <strong>relação com a vida dos estudantes fora da sala de aula.</strong>
                   Os alunos selecionam muitos aspectos de sua tarefa e são motivados por problemas do mundo real que podem,
-                  e em muitos casos irão, contribuir para a sua comunidade. Para desenvolver um projeto, os estudantes
-                  precisam lidar com questões interdisciplinares, trabalhar em equipe, tomar decisões e assumir o protagonismo.
+                  e em muitos casos irão,<strong>contribuir para a sua comunidade</strong>. Para desenvolver um projeto, os estudantes
+                  precisam lidar com <strong>questões interdisciplinares</strong>, trabalhar em equipe, tomar decisões e <strong>assumir o protagonismo</strong>.
                   <br /><br />
-                  O educador tem um papel muito importante nesse tipo de abordagem, uma vez que ele se torna o mediador
-                  das relações de aprendizagem e o orientador que deve ajudar o estudante a encontrar sentido naquilo
-                  que está aprendendo, criando também situações-problema cujo foco são essas relações.
+                  O educador tem um papel muito importante nesse tipo de abordagem, uma vez que ele se torna o <strong>mediador
+                  das relações de aprendizagem </strong>e o orientador que deve ajudar o estudante a encontrar sentido naquilo
+                  que está aprendendo, criando também <strong>situações-problema </strong>ujo foco são essas relações.
+                  que está aprendendo, criando também <strong>situações-problema </strong>cujo foco são essas relações.
                 </p>
               </div>
             </motion.div>
@@ -91,17 +92,17 @@ const Met2 = () => {
       <AnimatePresence>
         {expanded && (
           <motion.div
-            className="absolute inset-0 z-20 flex items-center justify-center px-6 text-center text-white bg-blue-500"
+            className="absolute inset-0 z-20 flex items-center justify-center px-6 text-center text-white bg-blue-800"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.2 }}
           >
             <div className="max-w-3xl">
-              <p className="text-base md:text-lg font-medium text-white">
-                “A investigação dos alunos é profundamente integrada à aprendizagem baseada em projetos, e como eles têm,
+              <p className="text-base md:text-lg font-medium text-slate-100">
+                “A <strong>investigação dos alunos </strong>é profundamente <strong>integrada à aprendizagem baseada em projetos</strong>, e como eles têm,
                 em geral, algum poder de escolha em relação ao projeto do seu grupo e aos métodos a serem usados para desenvolvê-lo,
-                eles tendem a ter uma motivação muito maior para trabalhar de forma diligente na solução dos problemas”.
+                eles tendem a ter uma <strong>motivação</strong> muito maior para trabalhar de forma diligente na <strong>solução dos problemas</strong>”.
                 <br /><br />
                 <span className="block mt-4 font-semibold">
                   – BENDER, W. Aprendizagem Baseada em Projetos. Editora Penso, 2014.

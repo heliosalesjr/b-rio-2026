@@ -34,7 +34,7 @@ const Met6 = () => {
         <div className="md:w-1/2 px-4 md:px-8 pb-6 md:pb-0 flex flex-col items-center text-center md:text-left">
           <FaPeopleCarry className="text-emerald-600 text-3xl mb-4" />
           <p className="text-slate-700 text-sm md:text-base">
-            Mas você também pode optar pela realização de um projeto mais amplo que envolva a turma, a escola e a comunidade de acordo com as necessidades e ideias trazidas pelos próprios estudantes.
+            Você também pode optar pela realização de um projeto mais amplo que envolva a turma, a escola e a comunidade de acordo com as necessidades e ideias trazidas pelos próprios estudantes.
           </p>
         </div>
 

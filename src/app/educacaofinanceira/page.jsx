@@ -12,7 +12,7 @@ export default function Modulo2() {
       <main >
         <Hero
                 title="Educação Financeira"
-                subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
+                subtitle="O valor da Educação Financeira em sala de aula, e a proposta da BEĨ Educação"
                 />
        
         <EFContentSection />

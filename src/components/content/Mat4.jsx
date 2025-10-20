@@ -1,15 +1,13 @@
 'use client'
 import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
-
 import React from 'react'
+import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { motion } from "framer-motion"
 import { Sparkles, Brain, Users, Lightbulb, NotebookPen, ArchiveRestore, ShieldQuestion } from "lucide-react"
 
 const SectionCard = ({ icon: Icon, title, children, color = "" }) => (
-
-  
   <motion.div
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -29,8 +27,35 @@ const SectionCard = ({ icon: Icon, title, children, color = "" }) => (
   </motion.div>
 )
 
-export default function Mat4() {
+const ImageSection = ({ src, alt, caption }) => (
+  <motion.div
+    initial={{ opacity: 0, scale: 0.95 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.7, ease: "easeOut" }}
+    viewport={{ once: true }}
+    className="mx-2 md:mx-4 my-8"
+  >
+    <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+      {caption && (
+        <div className="absolute bottom-0 left-0 right-0 p-6">
+          <p className="text-white text-lg font-semibold drop-shadow-lg">
+            {caption}
+          </p>
+        </div>
+      )}
+    </div>
+  </motion.div>
+)
 
+export default function Mat4() {
   const ref = useRef();
   const { markAsViewed } = useSidebar();
 
@@ -72,6 +97,13 @@ export default function Mat4() {
           </p>
         </SectionCard>
 
+        {/* IMAGEM 1 - Após introdução sobre perfil da turma */}
+        <ImageSection 
+          src="/stu1.jpg" 
+          alt="Estudantes interagindo em sala de aula"
+          caption="Conhecer os interesses dos estudantes é fundamental para uma aprendizagem significativa"
+        />
+
         <SectionCard icon={Brain} title="Diagnóstico de conhecimentos prévios">
           <p>
             Já em relação ao diagnóstico de conhecimentos prévios, é possível avaliar até que ponto os estudantes dominam os conteúdos que são pré-requisitos para a aplicação deste programa. Se os jovens não dominam conhecimentos básicos, não adianta avançar com o programa sem resolver as dificuldades prévias.
@@ -94,6 +126,13 @@ export default function Mat4() {
           <p>Como estas informações podem interferir no trabalho de sala de aula?</p>
         </SectionCard>
 
+        {/* IMAGEM 2 - Após reflexão, antes das sugestões práticas */}
+        <ImageSection 
+          src="/stu3.jpg" 
+          alt="Educador conduzindo atividade participativa"
+          caption="Ferramentas participativas aproximam educadores e estudantes"
+        />
+
         <SectionCard icon={NotebookPen} title="Sugestões de abordagem participativa">
           <p>
             Sugerimos o uso de ferramentas participativas, com capacidade de estimular uma aproximação entre educador e educandos e entre os próprios jovens, proporcionando um melhor conhecimento uns dos outros.
@@ -103,28 +142,33 @@ export default function Mat4() {
             <li>→ Jogo de perguntas e respostas</li>
             <li>→ Bate-papo em pequenos grupos</li>
             <li>→ Roda de conversa</li>
-            <li>→ “A pessoa mais importante da minha vida”</li>
-            <p className='text-blue-900 pt-4'>(Estratégias descritas nas páginas 9 e 10 do Caderno do Educador)</p>
+            <li>→ "A pessoa mais importante da minha vida"</li>
+            <p className='text-blue-900 pt-4'>(Estratégias descritas nas páginas 14 a 18 do Caderno do Educador)</p>
           </ul>
         </SectionCard>
+
         <SectionCard icon={ShieldQuestion} title="Para o diagnóstico de conhecimentos prévios, considere as seguintes informações:">
-          
-          
           <ul className="list-disc list-inside space-y-1">
             <li>Quais conteúdos prévios são necessários para abordar os temas de Educação Financeira e Matemática propostos neste Programa?</li>
             <li>Que aspectos do componente curricular devem ser retomados?</li>
             <li>Que tópicos são importantes em Educação Financeira?</li>
-           
           </ul>
         </SectionCard>
+
+        {/* IMAGEM 3 - Antes da última seção, destacando diagnóstico */}
+        <ImageSection 
+          src="/stu2.jpg" 
+          alt="Estudantes realizando atividades de diagnóstico"
+          caption="Atividades diagnósticas ajudam a identificar conhecimentos prévios e direcionar o ensino"
+        />
+
         <SectionCard icon={ArchiveRestore} title="Algumas ideias para realizar o diagnóstico de conhecimentos prévios">
-         
           <ul className="list-disc list-inside space-y-1">
             <li>→ Atividades dos capítulos 1, 2 e 3 do Livro do Estudante</li>
             <li>→ Sondagem por meio do Google Formulários</li>
             <li>→ Quiz sobre conteúdo de matemática do ano anterior</li>
             <li>→ Provinhas (importante deixar claro aos estudantes que não vale nota)</li>
-            <p className='text-blue-900 pt-4'>(Estratégias descritas nas páginas 10 e 11 do Caderno do Educador)</p>
+            <p className='text-blue-900 pt-4'>(Estratégias descritas nas páginas 14 a 18 do Caderno do Educador)</p>
           </ul>
         </SectionCard>
       </div>

@@ -12,7 +12,7 @@ export default function Modulo4() {
       <main >
         <Hero
                 title="Material Didático"
-                subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
+                subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a aplicação do material"
                 />
         
         <MatContentSection />

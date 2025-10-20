@@ -82,7 +82,7 @@ const Modulo1Situacao = () => {
       <AnimatePresence>
         {expanded && (
           <motion.div
-            className="absolute inset-0 z-20 flex items-center justify-center px-6 text-center text-white bg-blue-500"
+            className="absolute inset-0 z-20 flex items-center justify-center px-6 text-center text-white bg-blue-900"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
@@ -90,11 +90,11 @@ const Modulo1Situacao = () => {
           >
             <div className="max-w-3xl">
 
-              <p className="text-base md:text-lg font-medium text-white pb-8">
-                Investir em educação financeira é crucial, especialmente em um contexto como o do Brasil, onde a população enfrenta desafios significativos relacionados ao endividamento e à falta de planejamento financeiro. De acordo com dados recentes do Serasa, cerca de 74 milhões de brasileiros estavam inadimplentes em dezembro de 2024, o que representa um número alarmante de consumidores com contas em atraso. 
+              <p className="text-base md:text-lg font-medium text-slate-100 pb-8">
+                Investir em <strong>educação financeira</strong> é crucial, especialmente em um contexto como o do Brasil, onde a população enfrenta desafios significativos relacionados ao endividamento e à falta de <strong>planejamento financeiro</strong>. De acordo com dados recentes do Serasa, cerca de <strong>74 milhões de brasileiros estavam inadimplentes em dezembro de 2024</strong>, o que representa um número alarmante de consumidores com contas em atraso. 
               </p>
-              <p className="text-base md:text-lg font-medium text-white">
-              Esse cenário reflete não apenas a dificuldade em gerenciar dívidas, mas também a falta de conhecimento sobre práticas financeiras saudáveis, como o orçamento familiar e a importância de poupar para emergências. A educação financeira nas escolas pode desempenhar um papel vital na inversão dessa situação, capacitando os jovens a tomarem decisões financeiras mais informadas e responsáveis.
+              <p className="text-base md:text-lg font-medium text-slate-100">
+              Esse cenário reflete não apenas a dificuldade em <strong>gerenciar dívidas</strong>, mas também a falta de conhecimento sobre práticas financeiras saudáveis, como o <strong>orçamento familiar </strong>e a importância de poupar para emergências.<strong>A educação financeira nas escolas pode desempenhar um papel vital</strong> na inversão dessa situação, capacitando os jovens a tomarem <strong>decisões financeiras mais informadas e responsáveis</strong>.
               </p>
             </div>
           </motion.div>

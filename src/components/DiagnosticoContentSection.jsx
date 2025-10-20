@@ -12,7 +12,7 @@ export default function DiagnosticoContentSection() {
           <div className="mx-auto max-w-5xl space-y-8 mb-16">
 
             
-                <Mat4 />
+             
             
             <FadeInWhenVisible>
                 <Mat8 />

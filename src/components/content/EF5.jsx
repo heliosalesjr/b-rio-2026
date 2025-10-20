@@ -34,7 +34,7 @@ const EF5 = () => {
         <div className="md:w-1/2 px-4 md:px-8 pb-6 md:pb-0 flex flex-col items-center text-center md:text-left">
           <FaRegLightbulb className="text-yellow-500 text-3xl mb-4" />
           <p className="text-slate-700 text-sm md:text-base">
-            O programa propõe que os(as) educadores(as) trabalhem os conteúdos do Livro do Estudante por meio da Aprendizagem Baseada em Projetos, realizando atividades de curta duração que são chamados de PEQUENOS PROJETOS DIDÁTICOS ATIVOS (PPDAs)...
+            O programa propõe que os(as) educadores(as) trabalhem os conteúdos do Livro do Estudante por meio da Aprendizagem Baseada em Projetos, realizando atividades de curta duração...
           </p>
         </div>
 

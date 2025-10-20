@@ -11,10 +11,7 @@ const Mat3 = () => {
     "Apresentar o projeto de educação financeira aos estudantes.",
     "Realizar o diagnóstico do perfil da turma e de seus conhecimentos prévios em Matemática e Educação Financeira.",
     "Aplicar a primeira parte do Livro do Estudante (confira no sumário os capítulos que a compõem).",
-    "Dialogar com os estudantes sobre a escolha do tema do projeto coletivo?",
-    "Montar o planejamento do projeto e executar as tarefas.",
-    "Apresentar os resultados.",
-    "Ao longo de todo o processo, monitorar e fazer registros!"
+    
   ]
 
   return (
@@ -35,10 +32,10 @@ const Mat3 = () => {
           >
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Como iniciar a aplicação do programa, engajar os estudantes e fazer os primeiros registros
+                Como iniciar a aplicação do programa
               </h2>
               <p className="text-sm md:text-base text-slate-100">
-                Como vimos no tópico 1.2, na coleção <strong>Aprendendo a Lidar com Dinheiro</strong>, usamos a Abordagem Baseada em Projetos para que os estudantes coloquem a mão na massa, realizando <strong>Pequenos Projetos Didáticos Ativos (PPDA)</strong>, constituindo uma forma interessante e divertida de aplicar os conteúdos aprendidos. Ao fim de cada projeto, os estudantes devem apresentar os resultados para a comunidade escolar.
+                Na coleção <strong>Aprendendo a Lidar com Dinheiro</strong>, usamos a Abordagem Baseada em Projetos para que os estudantes coloquem a mão na massa, constituindo uma forma interessante e divertida de aplicar os conteúdos aprendidos. Assim, para iniciar a aplicação, é importante conhecer melhor esses estudantes, e para isso sugerimos <strong>ferramentas de Diagnóstico</strong>.
               </p>
             </div>
           </motion.div>

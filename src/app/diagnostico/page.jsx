@@ -13,7 +13,7 @@ export default function Diagnostico() {
       <ProgressBar />
       <main >
         <Hero
-                title="Diagnóstico e Encerramento"
+                title="Encerramento"
                 subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
                 />
        

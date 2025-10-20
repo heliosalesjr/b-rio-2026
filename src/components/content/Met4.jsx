@@ -36,7 +36,7 @@ export default function Met4() {
             Como trabalhar os Pequenos Projetos Didáticos Ativos
           </h2>
           <p className="text-gray-800 text-lg leading-relaxed">
-            Existem várias formas de trabalhar por projetos, mas na coleção <strong>Aprendendo a Lidar com Dinheiro</strong>, sugerimos o <strong>Pequeno Projeto Didático Ativo (PPDA)</strong>: projeto de curta duração (mensal, bimestral ou trimestral) como fator de mobilização para engajar os estudantes, constituindo uma forma interessante e divertida de aplicar os conteúdos aprendidos. Ao fim de cada projeto, os estudantes devem apresentar os resultados para a comunidade escolar.
+            Existem várias formas de trabalhar por projetos, e na coleção <strong>Aprendendo a Lidar com Dinheiro</strong>, sugerimos <strong>projetos de curta duração ao longo das aulas como fator de mobilização para engajar os estudantes</strong>, constituindo uma forma interessante e divertida de aplicar os conteúdos aprendidos. Ao fim de cada projeto, os estudantes devem apresentar os resultados para a comunidade escolar.
           </p>
         </div>
 

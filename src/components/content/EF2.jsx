@@ -74,7 +74,7 @@ const EF2 = () => {
             <h3 className="text-xl font-bold text-slate-700">Foco na Matemática</h3>
           </div>
           <p className="text-gray-600 leading-relaxed">
-            Embora seja um tema transversal, a Educação Financeira é tratada com destaque na área de Matemática, especialmente nos 5º, 6º, 7º e 9º anos do Ensino Fundamental.
+            Embora seja um tema transversal, a Educação Financeira é tratada com destaque na área de Matemática, ajudando a contextualizar conteúdos que costumam gerar ansiedade nos estudantes.
           </p>
         </div>
       </div>
