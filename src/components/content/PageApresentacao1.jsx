@@ -55,7 +55,7 @@ const PageApresentacao1 = () => {
         <div className="flex items-center justify-center h-full">
           <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-full min-h-96">
             <Image
-              src="/livros_bei.png"
+              src="/c46bg.png"
               alt="Imagem ilustrativa"
               fill
               className="rounded-xl object-cover hover:scale-105 transition-transform duration-300"
