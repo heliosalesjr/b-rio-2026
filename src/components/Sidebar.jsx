@@ -10,7 +10,9 @@ const navigation = {
       { id: 'apresentacao-1', title: 'Apresentação do Curso' },
       { id: 'apresentacao-2', title: 'Autonomia' },
       { id: 'apresentacao-3', title: 'Estrutura do Curso' },
+      { id: 'objetivos-formacao', title: 'Objetivos da Formação' },
       { id: 'apresentacao-4', title: 'Módulos' },
+
     ]
   },
   'Módulo 1': {

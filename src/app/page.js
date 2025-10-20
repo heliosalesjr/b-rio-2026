@@ -11,7 +11,7 @@ export default function Home() {
       <ProgressBar />
       <main >
       <Hero
-          title="CURSO DE FORMAÇÃO"
+          title="Formação Material de Educação Financeira"
           subtitle="COLEÇÃO APRENDENDO A LIDAR COM DINHEIRO - BEĨ EDUCAÇÃO"
           
         />

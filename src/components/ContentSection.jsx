@@ -6,6 +6,7 @@ import PageApresentacao1 from "./content/PageApresentacao1"
 import PageApresentacao2 from "./content/PageApresentacao2"
 import PageApresentacao4 from "./content/PageApresentacao4"
 import PageApresentacao5 from "./content/PageApresentacao5"
+import PageApresentacaoObj from "./content/PageApresentacaoObj"
 
 
 export default function ContentSection() {
@@ -25,6 +26,9 @@ export default function ContentSection() {
           
           <FadeInWhenVisible>
             <PageApresentacao4 />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <PageApresentacaoObj />
           </FadeInWhenVisible>
           <FadeInWhenVisible>
             <PageApresentacao5 />

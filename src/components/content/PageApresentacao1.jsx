@@ -38,23 +38,16 @@ const PageApresentacao1 = () => {
           </div>
           
           <p className="text-slate-700 text-lg leading-relaxed">
-            Este curso sobre a aplicação da Coleção{' '}
-            <span className="italic font-semibold text-slate-800">Aprendendo a Lidar com Dinheiro</span>{' '}
-            integra as ações de acompanhamento pedagógico promovidas pela{' '}
-            <span className="font-semibold">BEĨ Educação</span>, voltadas aos educadores 
-            e às educadoras da Secretaria de Estado de Educação de Mato Grosso que lecionam 
-            Matemática para turmas do 6º ao 8º ano do Ensino Fundamental e da 1ª série do Ensino Médio.
+            Este curso sobre a aplicação da Coleção <strong>Aprendendo a Lidar com Dinheiro</strong> faz parte das ações de acompanhamento pedagógico promovidas pela <strong>BEĨ Educação</strong>, voltadas aos educadores e educadoras da Secretaria de Estado de Educação do Rio de Janeiro que lecionam Matemática para turmas do 4º e 6º ano do Ensino Fundamental I e II.
           </p>
           
           <p className="text-slate-700 text-lg leading-relaxed">
-            Desenvolvido pela equipe pedagógica da{' '}
-            <span className="font-semibold ">BEĨ Educação</span>, em parceria com a 
-            equipe de tecnologia da{' '}
-            <span className="font-semibold">SEDUC</span>, o curso é oferecido no 
-            formato <span className="font-semibold text-slate-800">autoinstrucional</span> — ou seja, 
-            sem a presença de tutores para interação ou esclarecimento de dúvidas dos participantes.
+           Desenvolvido pela equipe pedagógica da BEĨ Educação, em parceria com a equipe de tecnologia da SEDUC, o curso é oferecido no formato autoinstrucional, ou seja,  sem a presença de tutores para interação ou esclarecimento de dúvidas dos participantes. Você pode aprender no seu próprio ritmo, de forma prática e acessível.
           </p>
           
+          <p className="text-slate-700 text-lg leading-relaxed">
+            Aprender sobre educação financeira é uma oportunidade de transformar a forma como ensinamos e vivemos. Quando os professores dominam esse tema, ajudam seus alunos a fazer escolhas mais conscientes e constroem, junto com eles, uma comunidade escolar mais equilibrada, solidária e preparada para o futuro.
+          </p>
           
         </div>
         

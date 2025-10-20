@@ -1,117 +1,93 @@
 "use client";
-import { useEffect, useRef } from 'react';
-import { useSidebar } from '@/contexts/SidebarContext';
-import { Tally4, BookMarked, BarChart } from "lucide-react"
-
+import { useEffect, useRef } from "react";
+import { useSidebar } from "@/contexts/SidebarContext";
+import {
+  Compass,
+  Layers,
+  MousePointerClick,
+  LibraryBig,
+  Handshake,
+} from "lucide-react";
 
 export default function PageApresentacao4() {
-
-  const cards = [
-    {
-      icon: Tally4,
-      title: "Módulos",
-      description: "O curso está estruturado em 4 módulos, compostos por seções de conteúdos relacionados à temática geral, que é a metodologia de aplicação do Programa de Educação Financeira da BEĨ Educação, através da coleção Aprendendo a Lidar com Dinheiro.",
-      color: "blue"
-    },
-    {
-      icon: BookMarked,
-      title: "Conteúdo",
-      description: "Para favorecer a compreensão dos conteúdos abordados neste material, no decorrer da leitura você encontrará links para ampliar o conhecimento a respeito de determinados métodos e informações; boxes com questões para reflexão...",
-      color: "green"
-    },
-    {
-      icon: BarChart,
-      title: "Referências",
-      description: "...e histórias fictícias de situações que podem ocorrer no cotidiano na sala de aula, para análise e reflexão. Ao final de cada módulo, temos leituras complementares por meio de uma lista de referências. Para uma visão geral da trilha e iniciar os estudos, confira o detalhamento dos modules no sumário a seguir.",
-      color: "slate"
-    },
-  ]
-
-  const getColorClasses = (color) => {
-    switch (color) {
-      case 'blue':
-        return {
-          icon: 'text-blue-600',
-          border: 'border-l-blue-500',
-          accent: 'text-blue-600'
-        }
-      case 'green':
-        return {
-          icon: 'text-green-600',
-          border: 'border-l-green-500',
-          accent: 'text-green-600'
-        }
-      case 'slate':
-        return {
-          icon: 'text-slate-600',
-          border: 'border-l-slate-500',
-          accent: 'text-slate-600'
-        }
-      default:
-        return {
-          icon: 'text-blue-600',
-          border: 'border-l-blue-500',
-          accent: 'text-blue-600'
-        }
-    }
-  }
-
   const ref = useRef();
   const { markAsViewed } = useSidebar();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          markAsViewed('apresentacao-3');
-        }
+        if (entry.isIntersecting) markAsViewed("apresentacao-4");
       },
       { threshold: 0.5 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
+    if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, [markAsViewed]);
 
+  const cards = [
+    {
+      icon: Compass,
+      title: "Visão geral da formação",
+      text: "Esta formação em Educação Financeira faz parte da metodologia da BEĨ Educação e propõe um percurso dividido em quatro ciclos formativos. A ideia é apoiar o professor passo a passo, desde o diagnóstico e planejamento até a aplicação prática em sala e a reflexão sobre os resultados.",
+      color: "from-blue-50 to-blue-100 border-blue-300 text-blue-700",
+    },
+    {
+      icon: Layers,
+      title: "Ciclos formativos (módulos)",
+      text: "Cada módulo corresponde a um ciclo formativo, com foco em um momento específico do trabalho pedagógico. Juntos, eles compõem a trilha completa da formação: compreender, planejar, aplicar e refletir. Em cada módulo, o participante encontrará textos, exemplos e atividades que ajudam a transformar o conteúdo em prática.",
+      color: "from-green-50 to-green-100 border-green-300 text-green-700",
+    },
+    {
+      icon: MousePointerClick,
+      title: "Como navegar",
+      text: "O site foi pensado para ser intuitivo e flexível. Em cada módulo, você pode ler os textos, explorar os boxes de reflexão, acessar links complementares e baixar os materiais de apoio. Não há uma ordem rígida — o importante é avançar no seu ritmo, conectando teoria e prática.",
+      color: "from-yellow-50 to-yellow-100 border-yellow-300 text-yellow-700",
+    },
+    {
+      icon: LibraryBig,
+      title: "Recursos e referências",
+      text: "Ao longo dos módulos, estão disponíveis referências bibliográficas, vídeos, planos de aula e materiais de apoio. Eles servem para aprofundar o estudo e oferecer ferramentas concretas para o trabalho em sala de aula.",
+      color: "from-purple-50 to-purple-100 border-purple-300 text-purple-700",
+    },
+    {
+      icon: Handshake,
+      title: "Conexão com a prática",
+      text: "A formação parte da realidade escolar e volta para ela. Cada proposta foi pensada para inspirar práticas de Educação Financeira que façam sentido no cotidiano das escolas e dialoguem com os alunos, suas famílias e a comunidade.",
+      color: "from-pink-50 to-rose-100 border-pink-300 text-rose-700",
+    },
+  ];
 
   return (
-    <div ref={ref} id="apresentacao-3" className="scroll-mt-20 w-full rounded-xl bg-gradient-to-br from-blue-50 to-slate-200 p-8 shadow-2xl border border-slate-100">
-      <div className="container">
-        <div className="mx-auto max-w-6xl space-y-8">
-          
-          {/* Título estilizado */}
-          <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-            Estrutura do curso
-          </h2>
+    <section
+      ref={ref}
+      id="apresentacao-4"
+      className="scroll-mt-20 w-full rounded-xl bg-gradient-to-br from-white to-slate-100 p-10 shadow-2xl border border-slate-200"
+    >
+      <div className="mx-auto max-w-6xl space-y-12">
+        {/* Título */}
+        <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+          Estrutura e Navegação da Formação
+        </h2>
 
-          {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-            {cards.map((card, index) => {
-              const colors = getColorClasses(card.color)
-              return (
-                <div 
-                  key={index} 
-                  className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center space-y-6"
-                >
-                  <div className="flex flex-col items-center text-center space-y-6">
-                    <card.icon className="h-12 w-12 text-blue-600" />
-                    <h3 className="text-xl font-bold text-slate-800">
-                      {card.title}
-                    </h3>
-                    <p className="text-slate-700 leading-relaxed">
-                      {card.description}
-                    </p>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-
+        {/* Grid de cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {cards.map((card, i) => (
+            <div
+              key={i}
+              className={`bg-gradient-to-br ${card.color} rounded-xl border p-8 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center space-y-4`}
+            >
+              <div className="bg-white rounded-full p-4 shadow-inner">
+                <card.icon className={`w-10 h-10 ${card.text}`} />
+              </div>
+              <h3 className="text-2xl font-semibold">{card.title}</h3>
+              <p className="text-slate-700 leading-relaxed text-justify">
+                {card.text}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
-  )
+    </section>
+  );
 }
