@@ -16,7 +16,7 @@ export default function PageApresentacao4() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) markAsViewed("apresentacao-4");
+        if (entry.isIntersecting) markAsViewed("estrutura");
       },
       { threshold: 0.5 }
     );
@@ -61,7 +61,7 @@ export default function PageApresentacao4() {
   return (
     <section
       ref={ref}
-      id="apresentacao-4"
+      id="estrutura"
       className="scroll-mt-20 w-full rounded-xl bg-gradient-to-br from-white to-slate-100 p-10 shadow-2xl border border-slate-200"
     >
       <div className="mx-auto max-w-6xl space-y-12">

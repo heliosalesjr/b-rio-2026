@@ -9,7 +9,7 @@ const navigation = {
     components: [
       { id: 'apresentacao-1', title: 'Apresentação do Curso' },
       { id: 'apresentacao-2', title: 'Autonomia' },
-      { id: 'apresentacao-3', title: 'Estrutura do Curso' },
+      { id: 'estrutura', title: 'Estrutura do Curso' },
       { id: 'objetivos-formacao', title: 'Objetivos da Formação' },
       { id: 'apresentacao-4', title: 'Módulos' },
 
@@ -21,8 +21,8 @@ const navigation = {
       { id: 'modulo-1-intro', title: 'O Módulo 1' },
       { id: 'modulo-1-objetivos', title: 'Objetivos do Módulo' },
       { id: 'modulo-1-situacao', title: 'Situação e Importância' },
-        { id: 'modulo-1-midia', title: 'Educação Financeira na Mídia' },
-        { id: 'modulo-1-video', title: 'A situação financeira dos Brasileiros' },
+      { id: 'modulo-1-midia', title: 'Educação Financeira na Mídia' },
+      { id: 'modulo-1-video', title: 'A situação financeira dos Brasileiros' },
     ]
   },
   'Educação Financeira': {
