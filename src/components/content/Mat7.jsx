@@ -1,9 +1,36 @@
+"use client" 
 import React from 'react'
+import { useEffect, useRef } from 'react';
+import { useSidebar } from '@/contexts/SidebarContext';
 import { FaVideo, FaBookOpen } from 'react-icons/fa'
 
 const Mat7 = () => {
+
+  const ref = useRef();
+          const { markAsViewed } = useSidebar();
+        
+          useEffect(() => {
+            const observer = new IntersectionObserver(
+              ([entry]) => {
+                if (entry.isIntersecting) {
+                  markAsViewed('mat-7');
+                }
+              },
+              { threshold: 0.5 }
+            );
+        
+            if (ref.current) {
+              observer.observe(ref.current);
+            }
+        
+            return () => observer.disconnect();
+          }, [markAsViewed]);
+
   return (
-    <div className="bg-white rounded-2xl shadow-2xl overflow-hidden p-6 md:p-10">
+    <div 
+      ref={ref} 
+      id="mat-7" 
+      className="bg-white scroll-mt-20 rounded-2xl shadow-2xl overflow-hidden p-6 md:p-10">
       <h2 className="text-xl md:text-3xl font-bold text-center text-slate-700 mb-8">Saiba Mais</h2>
       <div className="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-slate-300">
         {/* Bloco 1 - Vídeo tutorial */}

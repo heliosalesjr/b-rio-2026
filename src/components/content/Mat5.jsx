@@ -1,9 +1,32 @@
+"use client" 
 import React from 'react'
+import { useEffect, useRef } from 'react';
+import { useSidebar } from '@/contexts/SidebarContext';
 import { FaUsersCog, FaBookOpen, FaChalkboardTeacher } from 'react-icons/fa'
 
 const Mat5 = () => {
+  const ref = useRef();
+      const { markAsViewed } = useSidebar();
+    
+      useEffect(() => {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              markAsViewed('mat-5');
+            }
+          },
+          { threshold: 0.5 }
+        );
+    
+        if (ref.current) {
+          observer.observe(ref.current);
+        }
+    
+        return () => observer.disconnect();
+      }, [markAsViewed]);
+
   return (
-    <div className="bg-white rounded-2xl shadow-2xl overflow-hidden p-6 md:p-10 space-y-10">
+    <div ref={ref} id="mat-5" className="bg-white scroll-mt-20 rounded-2xl shadow-2xl overflow-hidden p-6 md:p-10 space-y-10">
           
           {/* Título e Parágrafo */}
           <div className="text-center">

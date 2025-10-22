@@ -1,6 +1,8 @@
 'use client'
 
 import React, { useState } from 'react'
+import { useEffect, useRef } from 'react';
+import { useSidebar } from '@/contexts/SidebarContext';
 import Image from 'next/image'
 import { FaPlus, FaArrowLeft } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -8,10 +10,32 @@ import { motion, AnimatePresence } from 'framer-motion'
 const Mat6 = () => {
   const [expanded, setExpanded] = useState(false)
 
+  const ref = useRef();
+        const { markAsViewed } = useSidebar();
+      
+        useEffect(() => {
+          const observer = new IntersectionObserver(
+            ([entry]) => {
+              if (entry.isIntersecting) {
+                markAsViewed('mat-6');
+              }
+            },
+            { threshold: 0.5 }
+          );
+      
+          if (ref.current) {
+            observer.observe(ref.current);
+          }
+      
+          return () => observer.disconnect();
+        }, [markAsViewed]);
+
   return (
     <motion.div
+      ref={ref} 
+      id="mat-6" 
       layout
-      className="relative w-full h-[70vh] rounded-2xl overflow-hidden shadow-2xl"
+      className="relative scroll-mt-20 w-full h-[70vh] rounded-2xl overflow-hidden shadow-2xl"
       transition={{ duration: 1.2 }}
     >
       {/* Versão Azul com texto */}
