@@ -56,30 +56,34 @@ const ImageSection = ({ src, alt, caption }) => (
 )
 
 export default function Mat4() {
+
   const ref = useRef();
-  const { markAsViewed } = useSidebar();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          markAsViewed('mat-4');
+      const { markAsViewed } = useSidebar();
+    
+      useEffect(() => {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              markAsViewed('mat-444');
+            }
+          },
+          { threshold: 0.1 }
+        );
+    
+        if (ref.current) {
+          observer.observe(ref.current);
         }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
-  }, [markAsViewed]);
+    
+        return () => observer.disconnect();
+      }, [markAsViewed]);
 
   return (
-    <div ref={ref} id="mat-4" className="scroll-mt-20 max-w-5xl mx-auto my-16 p-6 bg-gradient-to-br from-blue-50 to-emerald-50 rounded-2xl shadow-2xl pt-16 pb-16">
+    <div ref={ref} 
+        id="mat-444" 
+        className="scroll-mt-20 max-w-5xl mx-auto my-16 p-6 bg-gradient-to-br from-blue-50 to-emerald-50 rounded-2xl shadow-2xl pt-16 pb-16">
       <motion.h1
-        className="text-center text-3xl md:text-4xl font-bold text-slate-700 mb-8"
+        
+        className="scroll-mt-20 text-center text-3xl md:text-4xl font-bold text-slate-700 mb-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -87,7 +91,7 @@ export default function Mat4() {
         Diagnóstico do perfil da turma e de seus conhecimentos prévios
       </motion.h1>
 
-      <div className="space-y-8">
+      <div  className="space-y-8 ">
         <SectionCard icon={Sparkles} title="Determinar o perfil da turma">
           <p>
             Determinar o perfil da turma é um momento precioso no qual o educador descobre os interesses dos estudantes, seus talentos e desejos, destaca suas qualidades e seus potenciais, e identifica dificuldades e limites que devem ser superados.

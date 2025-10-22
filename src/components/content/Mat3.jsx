@@ -1,10 +1,33 @@
 'use client'
 
 import React, { useState } from 'react'
+import { useEffect, useRef } from 'react';
+import { useSidebar } from '@/contexts/SidebarContext';
 import { FaPlus, FaArrowLeft } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const Mat3 = () => {
+
+  const ref = useRef();
+      const { markAsViewed } = useSidebar();
+    
+      useEffect(() => {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              markAsViewed('mat-3');
+            }
+          },
+          { threshold: 0.5 }
+        );
+    
+        if (ref.current) {
+          observer.observe(ref.current);
+        }
+    
+        return () => observer.disconnect();
+      }, [markAsViewed]);
+
   const [expanded, setExpanded] = useState(false)
 
   const steps = [
@@ -16,8 +39,10 @@ const Mat3 = () => {
 
   return (
     <motion.div
+      ref={ref} 
+      id="mat-3"
       layout
-      className="relative w-full h-[70vh] rounded-2xl overflow-hidden shadow-2xl"
+      className="scroll-mt-20 relative w-full h-[70vh] rounded-2xl overflow-hidden shadow-2xl"
       transition={{ duration: 1.2 }}
     >
       {/* Conteúdo fechado */}
