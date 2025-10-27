@@ -70,22 +70,45 @@ export default function PageApresentacao4() {
           Estrutura e Navegação da Formação
         </h2>
 
-        {/* Grid de cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {cards.map((card, i) => (
-            <div
-              key={i}
-              className={`bg-gradient-to-br ${card.color} rounded-xl border p-8 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center space-y-4`}
-            >
-              <div className="bg-white rounded-full p-4 shadow-inner">
-                <card.icon className={`w-10 h-10 ${card.text}`} />
+        {/* Container dos cards */}
+        <div className="space-y-8">
+          {/* Primeira linha: 3 cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {cards.slice(0, 3).map((card, i) => (
+              <div
+                key={i}
+                className={`bg-gradient-to-br ${card.color} rounded-xl border p-8 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center space-y-4`}
+              >
+                <div className="bg-white rounded-full p-4 shadow-inner">
+                  <card.icon className={`w-10 h-10 ${card.text}`} />
+                </div>
+                <h3 className="text-2xl font-semibold">{card.title}</h3>
+                <p className="text-slate-700 leading-relaxed text-justify">
+                  {card.text}
+                </p>
               </div>
-              <h3 className="text-2xl font-semibold">{card.title}</h3>
-              <p className="text-slate-700 leading-relaxed text-justify">
-                {card.text}
-              </p>
+            ))}
+          </div>
+
+          {/* Segunda linha: 2 cards centralizados */}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
+              {cards.slice(3, 5).map((card, i) => (
+                <div
+                  key={i + 3}
+                  className={`bg-gradient-to-br ${card.color} rounded-xl border p-8 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center space-y-4`}
+                >
+                  <div className="bg-white rounded-full p-4 shadow-inner">
+                    <card.icon className={`w-10 h-10 ${card.text}`} />
+                  </div>
+                  <h3 className="text-2xl font-semibold">{card.title}</h3>
+                  <p className="text-slate-700 leading-relaxed text-justify">
+                    {card.text}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>

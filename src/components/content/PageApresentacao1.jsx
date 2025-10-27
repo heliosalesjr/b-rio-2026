@@ -38,11 +38,11 @@ const PageApresentacao1 = () => {
           </div>
           
           <p className="text-slate-700 text-lg leading-relaxed">
-            Este curso sobre a aplicação da Coleção <strong>Aprendendo a Lidar com Dinheiro</strong> faz parte das ações de acompanhamento pedagógico promovidas pela <strong>BEĨ Educação</strong>, voltadas aos educadores e educadoras da Secretaria de Estado de Educação do Rio de Janeiro que lecionam Matemática para turmas do 4º e 6º ano do Ensino Fundamental I e II.
+            Este curso sobre a aplicação da Coleção <strong>Aprendendo a Lidar com Dinheiro</strong> faz parte das ações de acompanhamento pedagógico promovidas pela <strong>BEĨ Educação</strong>, voltadas aos educadores e educadoras da Secretaria de Estado de Educação do Rio de Janeiro que lecionam Matemática para turmas do 4º e 5º ano do Ensino Fundamental I e II.
           </p>
           
           <p className="text-slate-700 text-lg leading-relaxed">
-           Desenvolvido pela equipe pedagógica da BEĨ Educação, em parceria com a equipe de tecnologia da SEDUC, o curso é oferecido no formato autoinstrucional, ou seja,  sem a presença de tutores para interação ou esclarecimento de dúvidas dos participantes. Você pode aprender no seu próprio ritmo, de forma prática e acessível.
+           Desenvolvido pela equipe pedagógica da BEĨ Educação, em parceria com a equipe de tecnologia da SME, o curso é oferecido no formato autoinstrucional, ou seja,  sem a presença de tutores para interação ou esclarecimento de dúvidas dos participantes. Você pode aprender no seu próprio ritmo, de forma prática e acessível.
           </p>
           
           <p className="text-slate-700 text-lg leading-relaxed">
@@ -55,7 +55,7 @@ const PageApresentacao1 = () => {
         <div className="flex items-center justify-center h-full">
           <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-full min-h-96">
             <Image
-              src="/c46bg.png"
+              src="/4e5.png"
               alt="Imagem ilustrativa"
               fill
               className="rounded-xl object-cover hover:scale-105 transition-transform duration-300"
