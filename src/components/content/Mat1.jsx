@@ -76,7 +76,7 @@ const Mat1 = () => {
         </h3>
         <div className="w-full h-[800px]">
           <iframe
-            src="/paginas_14_e_15.pdf"
+            src="/paginas_32_e_33.pdf"
             className="w-full h-full rounded-xl border"
             title="Amostra Livro do Estudante"
           ></iframe>

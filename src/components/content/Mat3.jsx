@@ -59,8 +59,8 @@ const Mat3 = () => {
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Como iniciar a aplicação do programa
               </h2>
-              <p className="text-sm md:text-base text-slate-100">
-                Na coleção <strong>Aprendendo a Lidar com Dinheiro</strong>, usamos a Abordagem Baseada em Projetos para que os estudantes coloquem a mão na massa, constituindo uma forma interessante e divertida de aplicar os conteúdos aprendidos. Assim, para iniciar a aplicação, é importante conhecer melhor esses estudantes, e para isso sugerimos <strong>ferramentas de Diagnóstico</strong>.
+              <p className="text-sm md:text-base text-slate-100 leading-relaxed">
+                Na coleção <strong className="bg-slate-50/70 text-slate-800 px-1.5 py-0.5 rounded font-semibold">Aprendendo a Lidar com Dinheiro</strong>, usamos a Abordagem Baseada em Projetos para que os estudantes coloquem a mão na massa, constituindo uma forma interessante e divertida de aplicar os conteúdos aprendidos. Assim, para iniciar a aplicação, é importante conhecer melhor esses estudantes, e para isso sugerimos <strong className="bg-slate-50/70 text-slate-800 px-1.5 py-0.5 rounded font-semibold">ferramentas de Diagnóstico</strong>.
               </p>
             </div>
           </motion.div>

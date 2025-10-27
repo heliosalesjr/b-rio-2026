@@ -40,37 +40,26 @@ const Mat2 = () => {
 
   const dropdownItems = [
     {
-      title: "Abordagem de conteúdos",
-      content: "O Caderno do Educador propõe trabalhar os conteúdos do Livro do Estudante por meio da aprendizagem baseada em projetos de curta duração e de outras metodologias ativas pensadas para desenvolver o protagonismo dos jovens."
+      title: "Apresentação",
+      content: "Este material foi pensado para apoiar você, educador(a), na mediação dos conteúdos ao longo do módulo. Aqui, explicamos os objetivos do caderno, a proposta pedagógica da BEĨ Educação e como este recurso pode ser integrado às rotinas da sua escola e da sua turma."
     },
     {
-      title: "Como engajar os estudantes?",
-      content: "O material fornece dicas para engajamento dos estudantes. Para engajar os estudantes é necessário que o educador conheça seus interesses, habilidades, sonhos e conhecimentos prévios – no caso deste programa, sobre Matemática e Educação Financeira. Isso o ajuda a planejar atividades e viver um processo de aprendizagem significativa, marcada pela ampliação dos saberes e pela construção de novos conceitos e atitudes."
+      title: "Matriz de Habilidades",
+      content: "Nesta seção, você encontra as habilidades mobilizadas ao longo do módulo, organizadas de forma clara para facilitar o planejamento. As habilidades dialogam com os componentes curriculares da BNCC e estão acompanhadas de comentários que ajudam a entender como elas se manifestam nas atividades propostas."
     },
     {
-      title: "Mapa esquemático dos conteúdos de matemática para o ensino básico",
-      content: "O mapa esquemático presente no material mostra os conteúdos elementares de objetos matemáticos previstos na BNCC para os anos finais do Ensino Fundamental."
+      title: "Como engajar os estudantes",
+      content: "Trazemos sugestões práticas e estratégias que podem ajudar a tornar as aulas mais significativas e os estudantes mais participativos."
     },
     {
-      title: "Metodologias ativas e o trabalho das ideias fundamentais de matemática",
-      content: "As metodologias ativas configuram estratégias potentes para associar as ideias fundamentais da Matemática à Educação Financeira de maneira que o estudante atribua significado ao que está estudando. Ao longo do caderno do educador, são apresentadas atividades que exploram tais abordagens, favorecendo a construção de conhecimento de forma mais engajada e significativa."
+      title: "Orientações ao educador",
+      content: "Aqui você encontrará indicações didáticas para o uso dos materiais: como organizar as atividades, quais pontos merecem atenção especial e de que forma é possível adaptar as propostas para diferentes realidades, respeitando os tempos e ritmos dos estudantes."
     },
     {
-      title: "Aprendizagem Baseada em Projetos",
-      content: "Existem várias formas de trabalhar por projetos e o material foca na Aprendizagem baseada em projetos (ABP), que envolve o desenvolvimento de conhecimentos por meio da investigação e resolução de problemas reais em projetos voltados à educação financeira."
-    },
-    {
-      title: "Sugestões de atividades com metodologias ativas e estratégias didáticas (é aqui que ficam os PPDAs)",
-      content: "O caderno do educador conta um conjunto de sugestões de atividades e de orientações, além de metodologias e estratégias didáticas, relacionadas às partes que compõem o livro do estudante."
-    },
-    {
-      title: "Referências bibliográficas, leituras e vídeos",
-      content: "As referências utilizadas, como links para leituras e vídeos, podem ser acessadas ao final do material."
-    },
-    {
-      title: "Respostas das perguntas, exercícios, atividades e questões do Livro do Estudante",
-      content: "Aqui o educador encontra as respostas dos exercícios presentes no livro do estudante."
+      title: "Referências bibliográficas",
+      content: "Listamos aqui os materiais utilizados na construção deste caderno: textos, vídeos, artigos, livros, que também podem servir como sugestões de aprofundamento para o trabalho docente."
     }
+    
   ]
 
   return (

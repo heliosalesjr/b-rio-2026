@@ -30,7 +30,7 @@ const Met1 = () => {
 
 
   return (
-    <div ref={ref} id="met-1" className="scroll-mt-20 bg-gradient-to-b from-white to-sky-200 py-10 px-4 md:px-16 relative overflow-hidden rounded-2xl shadow-2xl">
+    <div ref={ref} id="met-1" className="scroll-mt-20 bg-gradient-to-b from-white to-blue-500/80 py-10 px-4 md:px-16 relative overflow-hidden rounded-2xl shadow-2xl">
       {/* Título */}
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-slate-700 ">
         Metodologias Ativas
@@ -39,7 +39,7 @@ const Met1 = () => {
       <strong>Metodologias ativas </strong>são uma série de técnicas, procedimentos e processos com a finalidade de auxiliar a aprendizagem dos estudantes. São <strong>ativas</strong> porque consistem em práticas pedagógicas que pressupõem a realização de atividades práticas que estimulam o protagonismo dos jovens. Por meio das metodologias ativas, são trabalhadas habilidades como o pensamento crítico e criativo e a consciência de que há várias maneiras de realizar uma tarefa ou superar um desafio. Elas:
     </p>
       {/* Destaques iniciais */}
-      <div className="bg-pink-400 rounded-xl p-4 md:p-6 text-white max-w-2xl mx-auto mb-8 shadow-lg space-y-2">
+      <div className="bg-blue-600 rounded-xl p-4 md:p-6 text-white max-w-2xl mx-auto mb-8 shadow-lg space-y-2">
         <p className="flex items-center  gap-2">
           <FaCheckCircle className="text-white" />
           Apoiam no desenvolvimento de habilidades essenciais para o século 21
