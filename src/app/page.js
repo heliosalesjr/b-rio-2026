@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar"
-import Hero from "@/components/Hero"
+import HeroMain from "@/components/HeroMain"
 import ContentSection from "@/components/ContentSection"
 import Footer from "@/components/Footer"
 import ProgressBar from "@/components/ProgressBar"
@@ -10,9 +10,9 @@ export default function Home() {
       <Navbar />
       <ProgressBar />
       <main >
-      <Hero
+      <HeroMain
           title="Formação Material de Educação Financeira"
-          subtitle="COLEÇÃO APRENDENDO A LIDAR COM DINHEIRO - BEĨ EDUCAÇÃO"
+
           
         />
         <ContentSection />

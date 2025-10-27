@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
-export default function Hero({ title, subtitle, buttonText, buttonHref = "#content" }) {
+export default function HeroMain({ title, buttonText, buttonHref = "#content" }) {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
@@ -46,7 +46,7 @@ export default function Hero({ title, subtitle, buttonText, buttonHref = "#conte
                 className="text-white/95 md:text-2xl leading-relaxed"
                 
               >
-                {subtitle}
+                COLEÇÃO APRENDENDO A LIDAR COM DINHEIRO - <span style={{ whiteSpace: 'nowrap' }}>BEĨ EDUCAÇÃO</span>
               </p>
             </div>
           </div>

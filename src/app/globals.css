@@ -140,3 +140,24 @@ body::before {
   opacity: 0.7; /* Aplica 50% de transparência à imagem */
   z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
 }
+
+@font-face {
+  font-family: 'Bakerie Rough';
+  src: url('/bakerie-rough-bold.otf') format('opentype');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rustica';
+  src: url('/rustica-regular.otf') format('opentype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rustica Light';
+  src: url('/rustica-light.otf') format('opentype');
+  font-weight: normal;
+  font-display: swap;
+}

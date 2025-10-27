@@ -38,7 +38,7 @@ const PageApresentacao1 = () => {
           </div>
           
           <p className="text-slate-700 text-lg leading-relaxed">
-            Este curso sobre a aplicação da Coleção <strong>Aprendendo a Lidar com Dinheiro</strong> faz parte das ações de acompanhamento pedagógico promovidas pela <strong>BEĨ Educação</strong>, voltadas aos educadores e educadoras da Secretaria de Estado de Educação do Rio de Janeiro que lecionam Matemática para turmas do 4º e 5º ano do Ensino Fundamental I e II.
+            Este curso sobre a aplicação da Coleção <strong>Aprendendo a Lidar com Dinheiro</strong> faz parte das ações de acompanhamento pedagógico promovidas pela <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span>, voltadas aos educadores e educadoras da Secretaria de Estado de Educação do Rio de Janeiro que lecionam Matemática para turmas do 4º e 5º ano do Ensino Fundamental I e II.
           </p>
           
           <p className="text-slate-700 text-lg leading-relaxed">

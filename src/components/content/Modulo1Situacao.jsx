@@ -82,19 +82,19 @@ const Modulo1Situacao = () => {
       <AnimatePresence>
         {expanded && (
           <motion.div
-            className="absolute inset-0 z-20 flex items-center justify-center px-6 text-center text-white bg-blue-900"
+            className="absolute inset-0 z-20 flex items-center justify-center px-6 text-center text-white bg-blue-900 overflow-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.2 }}
           >
-            <div className="max-w-3xl">
+            <div className="max-w-3xl py-8">
 
-              <p className="text-base md:text-lg font-medium text-slate-100 pb-8">
-                Investir em <strong>educação financeira</strong> é crucial, especialmente em um contexto como o do Brasil, onde a população enfrenta desafios significativos relacionados ao endividamento e à falta de <strong>planejamento financeiro</strong>. De acordo com dados recentes do Serasa, cerca de <strong>74 milhões de brasileiros estavam inadimplentes em dezembro de 2024</strong>, o que representa um número alarmante de consumidores com contas em atraso. 
+              <p className="text-base md:text-lg font-medium text-slate-100 pb-8 leading-relaxed">
+                Investir em <span className="bg-slate-50 text-blue-800 px-2 py-1 rounded font-semibold">educação financeira</span> é crucial, especialmente em um contexto como o do Brasil, onde a população enfrenta desafios significativos relacionados ao endividamento e à falta de <span className="bg-slate-50 text-blue-800 px-2 py-1 rounded font-semibold">planejamento financeiro</span>. De acordo com dados recentes do Serasa, cerca de <span className="bg-slate-50 text-blue-800 px-2 py-1 rounded font-semibold">74 milhões de brasileiros estavam inadimplentes em dezembro de 2024</span>, o que representa um número alarmante de consumidores com contas em atraso. 
               </p>
-              <p className="text-base md:text-lg font-medium text-slate-100">
-              Esse cenário reflete não apenas a dificuldade em <strong>gerenciar dívidas</strong>, mas também a falta de conhecimento sobre práticas financeiras saudáveis, como o <strong>orçamento familiar </strong>e a importância de poupar para emergências.<strong>A educação financeira nas escolas pode desempenhar um papel vital</strong> na inversão dessa situação, capacitando os jovens a tomarem <strong>decisões financeiras mais informadas e responsáveis</strong>.
+              <p className="text-base md:text-lg font-medium text-slate-100 leading-relaxed">
+              Esse cenário reflete não apenas a dificuldade em <span className="bg-slate-50 text-blue-800 px-2 py-1 rounded font-semibold">gerenciar dívidas</span>, mas também a falta de conhecimento sobre práticas financeiras saudáveis, como o <span className="bg-slate-50 text-blue-800 px-2 py-1 rounded font-semibold">orçamento familiar</span> e a importância de poupar para emergências. <span className="bg-slate-50 text-blue-800 px-2 py-1 rounded font-semibold">A educação financeira nas escolas pode desempenhar um papel vital</span> na inversão dessa situação, capacitando os jovens a tomarem <span className="bg-slate-50 text-blue-800 px-2 py-1 rounded font-semibold">decisões financeiras mais informadas e responsáveis</span>.
               </p>
             </div>
           </motion.div>
@@ -106,7 +106,7 @@ const Modulo1Situacao = () => {
         onClick={() => setExpanded(!expanded)}
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.1 }}
-        className="absolute bottom-4 right-4 z-30 bg-white text-blue-600 hover:bg-blue-100 rounded-full p-3 shadow-xl transition-all"
+        className="absolute bottom-4 right-4 z-30 bg-white text-blue-800 hover:bg-blue-100 rounded-full p-3 shadow-xl transition-all"
         aria-label={expanded ? 'Voltar' : 'Expandir'}
       >
         {expanded ? <FaArrowLeft className="text-lg" /> : <FaPlus className="text-lg" />}
@@ -116,5 +116,3 @@ const Modulo1Situacao = () => {
 }
 
 export default Modulo1Situacao
-
-
