@@ -162,6 +162,13 @@ body::before {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/OpenSans-varias.ttf') format('opentype');
+  font-weight: normal;
+  font-display: swap;
+}
+
 @keyframes movingGradient {
   0% {
     background-position: 0% 50%;
