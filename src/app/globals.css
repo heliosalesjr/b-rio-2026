@@ -161,3 +161,22 @@ body::before {
   font-weight: normal;
   font-display: swap;
 }
+
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Classe utilitária */
+.animated-gradient {
+  background: linear-gradient(270deg, #3b82f6, #1bab50, #3b82f6, #3b82f6);
+  background-size: 400% 400%;
+  animation: movingGradient 17s ease infinite;
+}

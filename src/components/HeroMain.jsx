@@ -1,55 +1,56 @@
 "use client";
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import Link from "next/link"
-import { useState, useEffect } from "react"
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
+import { useState, useEffect } from "react";
 
-export default function HeroMain({ title, buttonText, buttonHref = "#content", imageSrc = "/ald_f_white.png" }) {
-  const [isLoaded, setIsLoaded] = useState(false)
+export default function HeroMain({ 
+  title, 
+  buttonText, 
+  buttonHref = "#content", 
+  imageSrc = "/ald_f_white.png" 
+}) {
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    setIsLoaded(true)
-  }, [])
+    setIsLoaded(true);
+  }, []);
 
   return (
     <section className="relative w-full min-h-[70vh] flex items-center justify-center overflow-hidden py-12 md:py-16 lg:py-20">
-      {/* Animated Background with Moving Gradients */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-blue-600 to-green-500">
-        {/* Animated gradient orbs */}
+      
+      {/* 🔥 Animated Background with Circulating Gradient */}
+      <div className="absolute inset-0 animated-gradient">
+        {/* Soft radial overlays */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.15)_0%,transparent_50%)] animate-pulse" />
         <div 
           className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(34,197,94,0.3)_0%,transparent_60%)]"
-          style={{
-            animation: 'float 8s ease-in-out infinite'
-          }}
+          style={{ animation: "float 8s ease-in-out infinite" }}
         />
         <div 
           className="absolute inset-0 bg-[radial-gradient(circle_at_20%_60%,rgba(59,130,246,0.2)_0%,transparent_50%)]"
-          style={{
-            animation: 'float 10s ease-in-out infinite reverse'
-          }}
+          style={{ animation: "float 10s ease-in-out infinite reverse" }}
         />
       </div>
 
-      {/* Animated Grid Pattern */}
+      {/* ✳️ Animated Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.07]">
         <div 
           className="w-full h-full bg-[linear-gradient(90deg,rgba(255,255,255,0.3)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.3)_1px,transparent_1px)] bg-[size:60px_60px]"
-          style={{
-            animation: 'gridMove 20s linear infinite'
-          }}
+          style={{ animation: "gridMove 20s linear infinite" }}
         />
       </div>
 
-      {/* Main Content - Two Columns */}
-      <div className="relative z-10 container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl pt-16 ">
+      {/* 🌟 Main Content */}
+      <div className="relative z-10 container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 xl:gap-16 items-center">
           
-          {/* Left Column - Text Content (3/5) */}
-          <div className={`lg:col-span-3 space-y-6 lg:space-y-8 transition-all duration-1000 ease-out ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+          {/* Left Column */}
+          <div className={`lg:col-span-3 space-y-6 lg:space-y-8 transition-all duration-1000 ease-out ${isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}>
+            
             <h1 
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide text-white leading-tight"
-              style={{ fontFamily: 'Rustica, sans-serif' }}
+              style={{ fontFamily: "Rustica, sans-serif" }}
             >
               <span className="drop-shadow-2xl uppercase block">
                 {title}
@@ -87,16 +88,10 @@ export default function HeroMain({ title, buttonText, buttonHref = "#content", i
             )}
           </div>
 
-          {/* Right Column - Image (2/5) */}
-          <div className={`lg:col-span-2 transition-all duration-1000 delay-200 ease-out ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+          {/* Right Column - Floating Image */}
+          <div className={`lg:col-span-2 transition-all duration-1000 delay-200 ease-out ${isLoaded ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}>
             <div className="relative aspect-square max-w-sm mx-auto lg:max-w-md xl:max-w-lg">
-              {/* Image container with animation */}
-              <div 
-                className="relative w-full h-full"
-                style={{
-                  animation: 'float 6s ease-in-out infinite'
-                }}
-              >
+              <div className="relative w-full h-full" style={{ animation: "float 6s ease-in-out infinite" }}>
                 <Image
                   src={imageSrc}
                   alt={title}
@@ -107,7 +102,6 @@ export default function HeroMain({ title, buttonText, buttonHref = "#content", i
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -120,7 +114,7 @@ export default function HeroMain({ title, buttonText, buttonHref = "#content", i
       <div className="absolute bottom-32 left-1/4 w-2 h-2 bg-green-300/40 rounded-full animate-pulse" />
       <div className="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-blue-300/40 rounded-full animate-ping" />
 
-      {/* CSS Animations */}
+      {/* Local animations */}
       <style jsx>{`
         @keyframes float {
           0%, 100% {
@@ -130,7 +124,7 @@ export default function HeroMain({ title, buttonText, buttonHref = "#content", i
             transform: translateY(-20px) rotate(2deg);
           }
         }
-        
+
         @keyframes gridMove {
           0% {
             transform: translate(0, 0);
@@ -139,11 +133,7 @@ export default function HeroMain({ title, buttonText, buttonHref = "#content", i
             transform: translate(60px, 60px);
           }
         }
-        
-        .delay-700 {
-          animation-delay: 700ms;
-        }
       `}</style>
     </section>
-  )
+  );
 }
