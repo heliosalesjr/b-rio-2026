@@ -32,12 +32,10 @@ const Modulo1Video = () => {
     <div ref={ref} id="modulo-1-video" className="scroll-mt-20 bg-white rounded-lg shadow-2xl p-6 md:p-10 space-y-8 text-center">
       {/* Título */}
       <div className="flex items-center justify-center gap-3 mb-8">
-        <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-green-500 rounded-full"></div>
-          <h2 className="text-2xl md:text-4xl font-bold text-slate-700">
+          <h2 className="text-2xl md:text-4xl font-bold text-slate-600 py-4">
             A Situação Financeira dos Brasileiros
           </h2>
-        <div className="w-1 h-12 bg-gradient-to-b from-green-500 to-blue-500 rounded-full"></div>
-      </div>
+         </div>
       
 
       {/* Vídeo */}

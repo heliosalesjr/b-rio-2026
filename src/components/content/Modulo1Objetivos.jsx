@@ -53,12 +53,10 @@ const Modulo1Objetivos = () => {
   return (
     <div ref={ref} id="modulo-1-objetivos" className="scroll-mt-20 rounded-xl bg-gradient-to-br from-white to-slate-50 p-8 shadow-2xl border border-slate-100">
       <div className="flex items-center justify-center gap-3 mb-8">
-        <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-green-500 rounded-full"></div>
-        <h2 className="text-4xl font-bold text-center text-slate-700">
+        <h2 className="text-4xl font-bold text-center text-slate-600 py-4">
           Objetivos do Módulo
         </h2>
-        <div className="w-1 h-12 bg-gradient-to-b from-green-500 to-slate-500 rounded-full"></div>
-      </div>
+        </div>
       
       <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {objetivos.map((obj, index) => (

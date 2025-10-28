@@ -46,7 +46,12 @@ export default function HeroMain({
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 xl:gap-16 items-center">
           
           {/* Left Column */}
-          <div className={`lg:col-span-3 space-y-6 lg:space-y-8 transition-all duration-1000 ease-out ${isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}>
+          <div
+            className={`lg:col-span-3 space-y-6 lg:space-y-8 transition-all duration-1000 ease-out
+                text-center lg:text-left
+                flex flex-col items-center lg:items-start
+                ${isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
+            >
             
             <h1 
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide text-white leading-tight"
