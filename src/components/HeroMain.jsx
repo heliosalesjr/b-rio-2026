@@ -1,9 +1,10 @@
 "use client";
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
-export default function HeroMain({ title, buttonText, buttonHref = "#content" }) {
+export default function HeroMain({ title, buttonText, buttonHref = "#content", imageSrc = "/ald_f_white.png" }) {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
@@ -11,78 +12,138 @@ export default function HeroMain({ title, buttonText, buttonHref = "#content" })
   }, [])
 
   return (
-    <section className="relative w-full min-h-[70vh] flex items-center justify-center overflow-hidden py-16 md:py-32 lg:py-40">
-      {/* Enhanced Background with Subtle Animation */}
+    <section className="relative w-full min-h-[70vh] flex items-center justify-center overflow-hidden py-12 md:py-16 lg:py-20">
+      {/* Animated Background with Moving Gradients */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-blue-600 to-green-500">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1)_0%,transparent_50%)] animate-pulse" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.05)_0%,transparent_50%)]" />
+        {/* Animated gradient orbs */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.15)_0%,transparent_50%)] animate-pulse" />
+        <div 
+          className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(34,197,94,0.3)_0%,transparent_60%)]"
+          style={{
+            animation: 'float 8s ease-in-out infinite'
+          }}
+        />
+        <div 
+          className="absolute inset-0 bg-[radial-gradient(circle_at_20%_60%,rgba(59,130,246,0.2)_0%,transparent_50%)]"
+          style={{
+            animation: 'float 10s ease-in-out infinite reverse'
+          }}
+        />
       </div>
 
-      {/* Subtle Grid Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="w-full h-full bg-[linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:60px_60px]" />
+      {/* Animated Grid Pattern */}
+      <div className="absolute inset-0 opacity-[0.07]">
+        <div 
+          className="w-full h-full bg-[linear-gradient(90deg,rgba(255,255,255,0.3)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.3)_1px,transparent_1px)] bg-[size:60px_60px]"
+          style={{
+            animation: 'gridMove 20s linear infinite'
+          }}
+        />
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-center space-y-8 text-center">
+      {/* Main Content - Two Columns */}
+      <div className="relative z-10 container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl pt-16 ">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 xl:gap-16 items-center">
           
-          {/* Enhanced Title with Custom Font */}
-          <div className="space-y-6 max-w-6xl mx-auto">
+          {/* Left Column - Text Content (3/5) */}
+          <div className={`lg:col-span-3 space-y-6 lg:space-y-8 transition-all duration-1000 ease-out ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
             <h1 
-              className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider text-white transition-all duration-1000 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide text-white leading-tight"
               style={{ fontFamily: 'Rustica, sans-serif' }}
-              // OU use esta linha se quiser testar a Rustica:
-              // style={{ fontFamily: 'Rustica, sans-serif' }}
             >
-              <span className="drop-shadow-2xl uppercase">
+              <span className="drop-shadow-2xl uppercase block">
                 {title}
               </span>
             </h1>
-            
-            {/* Subtitle with Glassmorphism */}
-            <div className={`backdrop-blur-sm bg-white/10 rounded-xl p-6 border border-white/20 max-w-[700px] mx-auto transition-all duration-1000 delay-200 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-              <p 
-                className="text-white/95 md:text-2xl leading-relaxed"
-                
+
+            {/* Decorative line */}
+            <div className="flex items-center gap-3">
+              <div className="h-1 w-16 bg-white/80 rounded-full" />
+              <div className="h-1 w-10 bg-white/60 rounded-full" />
+              <div className="h-1 w-6 bg-white/40 rounded-full" />
+            </div>
+
+            {/* Button */}
+            {buttonText && (
+              <div className="pt-2">
+                <Button 
+                  asChild 
+                  size="lg" 
+                  className="group relative bg-white text-blue-600 hover:bg-white/95 font-semibold px-8 py-6 text-lg rounded-xl shadow-2xl hover:shadow-white/30 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border-0"
+                >
+                  <Link href={buttonHref} className="flex items-center space-x-3">
+                    <span>{buttonText}</span>
+                    <svg 
+                      className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-2" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                </Button>
+              </div>
+            )}
+          </div>
+
+          {/* Right Column - Image (2/5) */}
+          <div className={`lg:col-span-2 transition-all duration-1000 delay-200 ease-out ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+            <div className="relative aspect-square max-w-sm mx-auto lg:max-w-md xl:max-w-lg">
+              {/* Image container with animation */}
+              <div 
+                className="relative w-full h-full"
+                style={{
+                  animation: 'float 6s ease-in-out infinite'
+                }}
               >
-                COLEÇÃO APRENDENDO A LIDAR COM DINHEIRO - <span style={{ whiteSpace: 'nowrap' }}>BEĨ EDUCAÇÃO</span>
-              </p>
+                <Image
+                  src={imageSrc}
+                  alt={title}
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
           </div>
 
-          {/* Enhanced Button */}
-          {buttonText && (
-            <div className={`transition-all duration-1000 delay-400 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-              <Button 
-                asChild 
-                size="lg" 
-                className="group relative bg-white text-blue-600 hover:bg-white/95 font-medium px-8 py-6 text-lg rounded-xl shadow-2xl hover:shadow-white/25 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border-0"
-              >
-                <Link href={buttonHref} className="flex items-center space-x-2">
-                  <span>{buttonText}</span>
-                  <svg 
-                    className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </Button>
-            </div>
-          )}
         </div>
       </div>
 
       {/* Bottom Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/10 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/10 to-transparent" />
       
-      {/* Floating Elements */}
-      <div className="absolute top-10 left-10 w-2 h-2 bg-white/30 rounded-full animate-pulse" />
-      <div className="absolute top-32 right-20 w-1 h-1 bg-white/20 rounded-full animate-ping" />
-      <div className="absolute bottom-20 left-1/4 w-1.5 h-1.5 bg-white/25 rounded-full animate-bounce" />
+      {/* Floating decorative elements */}
+      <div className="absolute top-10 left-10 w-3 h-3 bg-white/40 rounded-full animate-ping" />
+      <div className="absolute top-1/4 right-20 w-2 h-2 bg-white/30 rounded-full animate-bounce" />
+      <div className="absolute bottom-32 left-1/4 w-2 h-2 bg-green-300/40 rounded-full animate-pulse" />
+      <div className="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-blue-300/40 rounded-full animate-ping" />
+
+      {/* CSS Animations */}
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-20px) rotate(2deg);
+          }
+        }
+        
+        @keyframes gridMove {
+          0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(60px, 60px);
+          }
+        }
+        
+        .delay-700 {
+          animation-delay: 700ms;
+        }
+      `}</style>
     </section>
   )
 }
