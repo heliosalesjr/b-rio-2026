@@ -26,7 +26,7 @@ export default function Footer() {
           {/* Ícones de redes sociais */}
           <div className="flex space-x-6">
             <a 
-              href="https://www.instagram.com/bei.educacao/" 
+              href="https://www.instagram.com/beieducacao/" 
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition-colors duration-200"
@@ -76,7 +76,7 @@ export default function Footer() {
             </a>
             
             <a 
-              href="https://www.youtube.com/@beieducacao" 
+              href="https://www.youtube.com/c/BE%C4%A8Educa%C3%A7%C3%A3o" 
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition-colors duration-200"
