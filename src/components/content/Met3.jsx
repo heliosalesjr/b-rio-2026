@@ -110,7 +110,7 @@ export default function Met3() {
   }, [markAsViewed]);
 
   return (
-    <div ref={ref} id="met-3" className="scroll-mt-20 bg-gradient-to-br from-blue-50 to-emerald-50 py-16 px-6 flex flex-col items-center">
+    <div ref={ref} id="met-3" className="scroll-mt-20 bg-gradient-to-br from-blue-50 to-emerald-50 py-16 px-6 flex flex-col items-center shadow-2xl">
       <motion.h2
         className="text-4xl font-bold text-center mb-12 text-blue-900"
         initial={{ scale: 0 }}

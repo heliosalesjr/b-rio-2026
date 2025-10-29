@@ -55,7 +55,7 @@ export default function HeroMain({
             
             <h1 
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide text-white leading-tight"
-              style={{ fontFamily: "Open Sans, sans-serif" }}
+              style={{ fontFamily: "Open Sans Bold, sans-serif" }}
             >
               <span className="drop-shadow-2xl uppercase block">
                 {title}

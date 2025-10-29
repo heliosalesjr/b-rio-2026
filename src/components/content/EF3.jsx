@@ -23,32 +23,38 @@ const EF3 = () => {
 
   const dados = [
     [
-      "Área do conhecimento que utiliza fundamentos matemáticos relacionados ao uso do dinheiro.",
       "Relacionada ao comportamento financeiro do indivíduo.",
+      "Área do conhecimento que utiliza fundamentos matemáticos relacionados ao uso do dinheiro.",
+      
     ],
     [
-      "Ajuda a calcular juros, prestações, descontos e entender operações financeiras.",
       "Ajuda a desenvolver habilidades para gerenciar finanças pessoais de forma eficaz.",
+      "Ajuda a calcular juros, prestações, descontos e entender operações financeiras.",
+      
     ],
     [
-      "É focada em fórmulas, cálculos e teorias matemáticas aplicadas a finanças.",
       "É focada em hábitos, atitudes e estratégias para uma vida financeira saudável.",
+      "É focada em fórmulas, cálculos e teorias matemáticas aplicadas a finanças.",
+      
     ],
     [
-      "Envolve conceitos como juros simples e compostos, valor presente e futuro, amortização.",
       "Inclui conteúdos como orçamento, poupança, investimento, crédito e planejamento financeiro.",
+      "Envolve conceitos como juros simples e compostos, valor presente e futuro, amortização.",
+      
     ],
     [
       "Utilizada para resolver problemas financeiros específicos e tomar decisões baseadas em cálculos.",
       "Aplicada no dia a dia para tomar decisões financeiras conscientes e responsáveis.",
     ],
     [
-      "Frequentemente ensinada como parte de disciplinas de Matemática.",
       "Considerada um tema transversal na educação, integrando-se com várias disciplinas.",
+      "Frequentemente ensinada como parte de disciplinas de Matemática.",
+      
     ],
     [
-      "Melhora a capacidade de realizar cálculos financeiros precisos.",
       "Promove a conscientização financeira e a habilidade de planejar para o futuro.",
+      "Melhora a capacidade de realizar cálculos financeiros precisos.",
+      
     ],
   ];
 
@@ -59,7 +65,7 @@ const EF3 = () => {
       className="scroll-mt-20 bg-white p-6 md:p-10 rounded-2xl shadow-2xl overflow-x-auto"
     >
       <div className="text-center mb-10">
-        <h1 className="text-3xl md:text-4xl font-bold text-slate-800 mb-2">
+        <h1 className="text-3xl md:text-4xl font-bold text-slate-700 mb-2 py-4">
           Diferenças entre Matemática Financeira e Educação Financeira
         </h1>
         <p className="text-slate-600 text-base md:text-lg max-w-2xl mx-auto">
@@ -71,13 +77,13 @@ const EF3 = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Títulos com ícones */}
         <div className="bg-orange-100 rounded-xl p-4 flex justify-center items-center gap-3 shadow-sm border-b-4 border-pink-400 text-center">
-          <FaCalculator className="text-pink-500 text-3xl" />
-          <h2 className="text-xl font-bold text-orange-800">Matemática Financeira</h2>
+          <FaPiggyBank className="text-pink-500 text-3xl" />
+          <h2 className="text-xl font-bold text-orange-800">Educação Financeira</h2>
         </div>
 
         <div className="bg-blue-100 rounded-xl p-4 flex justify-center items-center gap-3 shadow-sm border-b-4 border-blue-400 text-center">
-          <FaPiggyBank className="text-yellow-500 text-3xl" />
-          <h2 className="text-xl font-bold text-blue-800">Educação Financeira</h2>
+          <FaCalculator className="text-yellow-500 text-3xl" />
+          <h2 className="text-xl font-bold text-blue-800">Matemática Financeira</h2>
         </div>
 
         {/* Linhas de conteúdo */}

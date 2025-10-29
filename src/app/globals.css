@@ -165,7 +165,16 @@ body::before {
 @font-face {
   font-family: 'Open Sans';
   src: url('/OpenSans-varias.ttf') format('opentype');
+  
   font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('/OpenSans-varias.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
   font-display: swap;
 }
 

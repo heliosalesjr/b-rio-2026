@@ -32,7 +32,7 @@ const PageApresentacao1 = () => {
         <div className="md:col-span-2 space-y-6 flex flex-col justify-center">
           <div className="flex items-center gap-3">
             <div className="w-1 h-12 bg-gradient-to-b from-slate-500 to-blue-500 rounded-full"></div>
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-700 to-green-700 bg-clip-text text-transparent" >
               Apresentação do Curso
             </h2>
           </div>

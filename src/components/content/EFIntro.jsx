@@ -34,7 +34,7 @@ const EFIntro = () => {
   }, [markAsViewed]);
 
   return (
-    <div ref={ref} id="ef-intro" className="scroll-mt-20 relative w-full h-[50vh] overflow-hidden rounded-lg">
+    <div ref={ref} id="ef-intro" className="scroll-mt-20 relative w-full h-[50vh] overflow-hidden rounded-lg shadow-2xl">
       {/* Texto sobreposto */}
       <div className="absolute bottom-0 left-0 w-full bg-black/60 text-white px-6 py-4 z-10">
         <p className="max-w-4xl mx-auto text-sm md:text-base leading-relaxed text-center">

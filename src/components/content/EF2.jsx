@@ -28,8 +28,8 @@ const EF2 = () => {
   }, [markAsViewed]);
 
   return (
-    <div ref={ref} id="ef-2" className="scroll-mt-20 max-w-6xl mx-auto p-6 bg-white rounded-xl">
-      <h2 className="text-4xl font-bold text-slate-700 text-center mb-12">
+    <div ref={ref} id="ef-2" className="scroll-mt-20 max-w-6xl mx-auto p-6 bg-white rounded-xl shadow-2xl">
+      <h2 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent pb-8 p-4">
         Educação Financeira no Ensino Fundamental
       </h2>
       

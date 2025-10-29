@@ -1,19 +1,36 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t py-12 bg-blue-500">
+    <footer className="w-full border-t py-12 bg-blue-600">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center space-y-8">
           {/* Logo e tagline */}
           <div className="text-center">
-            <h3 className="text-xl font-serif tracking-wide text-white">BEĨ Educação</h3>
-            <p className="mt-1 text-sm italic text-white">conteúdo com propósito</p>
+            <div className="mb-3">
+              <img
+                src="/logo_white.png"
+                alt="BEĨ Educação"
+                className="h-[150px] w-auto mx-auto pb-8"
+              />
+            </div>
+            <p 
+              className="text-sm text-white tracking-wider"
+              style={{ fontFamily: 'Open Sans Bold, sans-serif' }}
+            >
+              CONTEÚDO COM PROPÓSITO
+            </p>
           </div>
 
           {/* Ícones de redes sociais */}
           <div className="flex space-x-6">
-            <a href="#" className="hover:text-gray-300 transition-colors duration-200">
+            <a 
+              href="https://www.instagram.com/bei.educacao/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-300 transition-colors duration-200"
+            >
               <span className="sr-only">Instagram</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,8 +49,14 @@ export default function Footer() {
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
             </a>
-            <a href="mailto:contato@meuprojeto.com" className="hover:text-gray-300 transition-colors duration-200">
-              <span className="sr-only">Email</span>
+            
+            <a 
+              href="https://www.beieducacao.com.br" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-300 transition-colors duration-200"
+            >
+              <span className="sr-only">Website</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -46,11 +69,18 @@ export default function Footer() {
                 strokeLinejoin="round"
                 className="w-5 h-5"
               >
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
               </svg>
             </a>
-            <a href="#" className="hover:text-gray-300 transition-colors duration-200">
+            
+            <a 
+              href="https://www.youtube.com/@beieducacao" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-300 transition-colors duration-200"
+            >
               <span className="sr-only">YouTube</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,21 +100,10 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Links legais */}
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-            <Link href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-              Termos de Uso
-            </Link>
-            <Link href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-              Política de Privacidade
-            </Link>
-            <Link href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-              Cookies
-            </Link>
-          </div>
-
           {/* Copyright */}
-          <div className="text-xs text-white">© 2025 todos os direitos</div>
+          <div className="text-xs text-white">
+            © 2025 BEĨ Educação - Todos os direitos reservados
+          </div>
         </div>
       </div>
     </footer>
