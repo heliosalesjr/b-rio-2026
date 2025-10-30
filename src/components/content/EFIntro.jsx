@@ -9,7 +9,7 @@ import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/autoplay'
 
-const images = ['fin1.jpg', 'fin2.jpg', 'fin3.jpg']
+const images = ['fin1.jpg', 'piggy3.png', 'fin3.jpg']
 
 const EFIntro = () => {
 
