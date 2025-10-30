@@ -37,7 +37,7 @@ export default function ContentSection() {
           
           <div className="flex justify-center mt-8">
             <Button asChild>
-              <Link href="/modulo1">Próxima Página: O Módulo 1</Link>
+              <Link href="/modulo1">Próxima Página: Módulo 1</Link>
             </Button>
           </div>
         </div>

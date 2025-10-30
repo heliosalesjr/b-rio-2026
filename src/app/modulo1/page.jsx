@@ -12,7 +12,7 @@ export default function Modulo1() {
       <ProgressBar />
       <main >
       <Hero
-        title="O Módulo 1"
+        title="Módulo 1"
         subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
         />
         

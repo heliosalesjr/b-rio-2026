@@ -54,7 +54,7 @@ const Mat9 = () => {
   return (
     <div ref={ref} id="what" className="scroll-mt-20 bg-white rounded-2xl shadow-2xl p-8 md:p-12 max-w-3xl mx-auto space-y-6">
       <h2 className="text-xl md:text-2xl font-bold text-slate-800 mb-4">
-        NESTE MÓDULO EU:
+        NESSE MÓDULO EU:
       </h2>
       <ul className="space-y-4">
         {checklistItems.map((item, index) => (

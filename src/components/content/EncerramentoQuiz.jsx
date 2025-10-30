@@ -254,8 +254,8 @@ export default function EncerramentoQuiz() {
         id="modulo1-quiz"
         className="flex items-center justify-center gap-3 mb-8"
       >
-        <div className="scroll-mt-20 mt-8 bg-white py-4 text-center">
-          <h2 className="text-2xl md:text-4xl font-bold text-slate-700 py-4">
+        <div className="scroll-mt-20 mt-8 bg-white text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent pb-8 p-4">
             Quiz do Módulo 1
           </h2>
 

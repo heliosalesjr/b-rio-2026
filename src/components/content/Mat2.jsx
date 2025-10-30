@@ -67,7 +67,7 @@ const Mat2 = () => {
           
           {/* Título e Parágrafo */}
           <div className="text-center">
-            <h2 className="text-2xl md:text-4xl font-bold text-slate-700 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent pb-8 p-4">
             Conhecendo a estrutura do Caderno do Educador
             </h2>
             <p className="text-slate-700 text-sm md:text-base max-w-3xl mx-auto">
