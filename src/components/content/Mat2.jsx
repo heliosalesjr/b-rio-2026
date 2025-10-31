@@ -141,7 +141,21 @@ const Mat2 = () => {
                 </Collapsible>
               ))}
             </div>
+
+            <div className="text-center mt-10 space-y-6">
+        <h3 className="text-2xl font-semibold text-slate-700">
+          Veja uma amostra de um de nossos livros do educador
+        </h3>
+        <div className="w-full h-[800px]">
+          <iframe
+            src="/paginas_32_e_33.pdf"
+            className="w-full h-full rounded-xl border"
+            title="Amostra Livro do Educador"
+          ></iframe>
+        </div>
+      </div>
           </div>
+          
         </div>  
   )
 }
