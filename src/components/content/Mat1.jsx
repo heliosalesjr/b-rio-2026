@@ -72,7 +72,7 @@ const Mat1 = () => {
       {/* Subtítulo + PDF */}
       <div className="text-center mt-10 space-y-6">
         <h3 className="text-2xl font-semibold text-slate-700">
-          Veja uma amostra de um de nossos cadernos do estudante
+          Veja uma amostra de um de nossos Livros do Estudante
         </h3>
         <div className="w-full h-[800px]">
           <iframe

@@ -11,24 +11,24 @@ const Mat6 = () => {
   const [expanded, setExpanded] = useState(false)
 
   const ref = useRef();
-        const { markAsViewed } = useSidebar();
-      
-        useEffect(() => {
-          const observer = new IntersectionObserver(
-            ([entry]) => {
-              if (entry.isIntersecting) {
-                markAsViewed('mat-6');
-              }
-            },
-            { threshold: 0.5 }
-          );
-      
-          if (ref.current) {
-            observer.observe(ref.current);
-          }
-      
-          return () => observer.disconnect();
-        }, [markAsViewed]);
+  const { markAsViewed } = useSidebar();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          markAsViewed('mat-6');
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, [markAsViewed]);
 
   return (
     <motion.div
@@ -58,10 +58,10 @@ const Mat6 = () => {
             >
               <div className="max-w-3xl">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">Padlet</h2>
-                <p className="text-sm md:text-base text-slate-100">
-                  Uma <strong>ferramenta útil </strong>para esse registro é o <strong>PADLET</strong>, que funciona como um <strong>organizador virtual de tarefas</strong>.
-                  Ele permite criar e gerenciar murais em diversos formatos, <strong>promovendo a curiosidade, a criação e a comunicação </strong>entre os estudantes.
-                  O Padlet facilita a interação e a socialização, <strong>enriquecendo o processo de ensino-aprendizagem</strong>.
+                <p className="text-sm md:text-base text-slate-100 leading-relaxed">
+                  Uma <span className="bg-white text-blue-800 px-2 py-1 rounded font-semibold">ferramenta útil</span> para esse registro é o <span className="bg-white text-blue-800 px-2 py-1 rounded font-semibold">PADLET</span>, que funciona como um <span className="bg-white text-blue-800 px-2 py-1 rounded font-semibold">organizador virtual de tarefas</span>.
+                  Ele permite criar e gerenciar murais em diversos formatos, <span className="bg-white text-blue-800 px-2 py-1 rounded font-semibold">promovendo a curiosidade, a criação e a comunicação</span> entre os estudantes.
+                  O Padlet facilita a interação e a socialização, <span className="bg-white text-blue-800 px-2 py-1 rounded font-semibold">enriquecendo o processo de ensino-aprendizagem</span>.
                 </p>
               </div>
             </motion.div>
