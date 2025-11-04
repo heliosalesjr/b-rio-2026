@@ -13,7 +13,7 @@ export default function Modulo1() {
       <main >
       <Hero
         title="Módulo 1"
-        subtitle="Como funciona o programa “Aprendendo a lidar com dinheiro” da BEĨ Educação e a metodologia de aplicação do material"
+        subtitle="O que vamos aprender nesse primeiro módulo"
         />
         
       <Modulo1ContentSection />

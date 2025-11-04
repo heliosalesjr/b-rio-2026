@@ -33,7 +33,7 @@ export default function Met4() {
         {/* Coluna Esquerda */}
         <div className="space-y-6 mx-4">
           <h2 className="text-3xl font-bold text-slate-700">
-            Como trabalhar os Pequenos Projetos Didáticos Ativos
+            Como trabalhar os Projetos em Sala de Aula
           </h2>
           <p className="text-gray-800 text-lg leading-relaxed">
             Existem várias formas de trabalhar por projetos, e na coleção <strong>Aprendendo a Lidar com Dinheiro</strong>, sugerimos <strong>projetos de curta duração ao longo das aulas como fator de mobilização para engajar os estudantes</strong>, constituindo uma forma interessante e divertida de aplicar os conteúdos aprendidos. Ao fim de cada projeto, os estudantes devem apresentar os resultados para a comunidade escolar.

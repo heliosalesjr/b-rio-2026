@@ -38,7 +38,7 @@ const PageApresentacao1 = () => {
           </div>
           
           <p className="text-slate-700 text-lg leading-relaxed">
-            Este curso sobre a aplicação da Coleção <strong>Aprendendo a Lidar com Dinheiro</strong> faz parte das ações de acompanhamento pedagógico promovidas pela <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span>, voltadas aos educadores e educadoras da Secretaria de Estado de Educação do Rio de Janeiro que lecionam Matemática para turmas do 4º e 5º ano do Ensino Fundamental I e II.
+            Este curso sobre a aplicação da Coleção <strong>Aprendendo a Lidar com Dinheiro</strong> faz parte das ações de acompanhamento pedagógico promovidas pela <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span>, voltadas aos educadores e educadoras da Secretaria de Estado de Educação do Rio de Janeiro que lecionam Matemática para turmas do 4º e 5º ano do Ensino Fundamental.
           </p>
           
           <p className="text-slate-700 text-lg leading-relaxed">
@@ -55,7 +55,7 @@ const PageApresentacao1 = () => {
         <div className="flex items-center justify-center h-full">
           <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-full min-h-96">
             <Image
-              src="/4e5.png"
+              src="/capaz.png"
               alt="Imagem ilustrativa"
               fill
               className="rounded-xl object-cover hover:scale-105 transition-transform duration-300"
