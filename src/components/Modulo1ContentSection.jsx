@@ -8,6 +8,7 @@ import Link from "next/link"
 //import Modulo1Midia from "./content/Modulo1Midia"
 //import Modulo1Situacao2 from "./content/Modulo1Situacao2"
 import Modulo1Midia from "./content/Modulo1Midia"
+import PageApresentacaoAoFinal from "./content/PageApresentacaoAoFinal"
 
 export default function Modulo1ContentSection() {
     return (
@@ -35,7 +36,9 @@ export default function Modulo1ContentSection() {
                   <Modulo1Video />
                 </FadeInWhenVisible>
                 
-                
+                <FadeInWhenVisible>
+                  <PageApresentacaoAoFinal />
+                </FadeInWhenVisible>
                 
                 
                 
