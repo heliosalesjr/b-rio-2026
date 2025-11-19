@@ -69,9 +69,17 @@ export default function HeroMain({
               <div className="h-1 w-6 bg-white/40 rounded-full" />
             </div>
 
+           
+            <h1
+              className="text-2xl sm:text-3xl font-thin text-white mt-3 tracking-wide"
+              style={{ fontFamily: "Open Sans, sans-serif" }}
+            >
+              Módulo 1
+            </h1>
+
             {/* Button */}
             {buttonText && (
-              <div className="pt-2">
+              <div className="pt-4">
                 <Button 
                   asChild 
                   size="lg" 
@@ -91,6 +99,7 @@ export default function HeroMain({
                 </Button>
               </div>
             )}
+
           </div>
 
           {/* Right Column - Floating Image */}
@@ -113,12 +122,7 @@ export default function HeroMain({
       {/* Bottom Fade */}
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/10 to-transparent" />
       
-      {/* Floating decorative elements */}
-      <div className="absolute top-10 left-10 w-3 h-3 bg-white/40 rounded-full animate-ping" />
-      <div className="absolute top-1/4 right-20 w-2 h-2 bg-white/30 rounded-full animate-bounce" />
-      <div className="absolute bottom-32 left-1/4 w-2 h-2 bg-green-300/40 rounded-full animate-pulse" />
-      <div className="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-blue-300/40 rounded-full animate-ping" />
-
+     
       {/* Local animations */}
       <style jsx>{`
         @keyframes float {

@@ -43,7 +43,7 @@ const Mat7 = () => {
               href="https://www.youtube.com/watch?v=WzPqHeUq6z8"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline mt-2 inline-block"
+              className="text-blue-500 underline mt-2 inline-block"
             >
               Assista no YouTube
             </a>
@@ -57,12 +57,20 @@ const Mat7 = () => {
             <strong>Diário de Bordo:</strong><br />
             Explore as possibilidades de escrita para transformar sua sala de aula em uma comunidade de aprendizagem.<br />
             <a
-              href="https://www.escrevendoofuturo.org.br/conteudo/sua-aula/orientacao-para-a-pratica/38/diario-de-bordo--possibilidades-de-escrita-para-tornar-a-sala-de-aula-uma-comunidade-de-aprendizagem"
+              href="https://transformando.com.vc/o-que-e-um-diario-de-bordo-e-como-usar-na-educacao-infantil/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-green-600 hover:underline mt-2 inline-block"
+              className="text-green-600 underline mt-2 inline-block"
             >
-              Leia mais no Escrevendo o Futuro
+              O que é um diário de bordo?
+            </a>
+            <a
+              href="https://dialogosembalados.com.br/blog/o-que-e-um-diario-de-bordo-e-como-usa-lo-na-educacao-infantil/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-600 underline mt-2 inline-block"
+            >
+              O que é um diário de bordo e como usar na educação infantil?
             </a>
           </p>
         </div>
