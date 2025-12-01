@@ -65,7 +65,7 @@ const PageApresentacaoObj = () => {
             <FaRegLightbulb className="text-green-600 mt-1" />
             <p className="text-slate-700 leading-relaxed">
               Compreender os fundamentos e a metodologia do Programa de
-              Educação Financeira da BEĨ, mapeando seus princípios, estrutura e
+              Educação Financeira da <span style={{ whiteSpace: 'nowrap' }} className='font-bold'>BEĨ Educação</span>, mapeando seus princípios, estrutura e
               etapas de aplicação, para orientar o uso coerente da coleção em
               sala de aula.
             </p>

@@ -10,31 +10,36 @@ export default function CourseStructure() {
       topics: [
         "Educação Financeira na sala de aula",
         "O programa da BEĨ Educação",
-        "O material didático",
-        "Iniciando a aplicação",
-        "Recapitulando",
+          "Metodologias Ativas",
+          "O material didático",
+          "Iniciando a aplicação - Diagnóstico"
       ],
     },
     {
       title: "MÓDULO 2 - Como planejar aulas e orientar os estudantes a realizar os projetos em sala de aula",
       topics: [
-        "Roteiro para elaboração do PPDA e PDA",
-        "Matriz de habilidades (Quadro Geral das Etapas)",
-        "Ferramenta SMART: um modelo para aperfeiçoar suas metas",
-        "Ferramenta 5W2H: um modelo de plano de ação de atividades",
+        "Projetos sugeridos nos livros",
+        "Matriz de habilidades",
+        "Metas SMART: aperfeiçoa",
+        "Ferramenta 5W2H: um modelo de plano de ação"
       ],
     },
     {
       title: "MÓDULO 3 - Como realizar o monitoramento e ferramentas de avaliação de aprendizagem ao longo do programa",
       topics: [
-        "Tópico 1",
-        "Tópico 2",
+        "A importância de monitorar as atividades",
+        "Erro como pista para ajustar a mediação da aprendizagem",
+        "Tipos de Avaliação",
+        "Rubrica Avaliativa: Ferramenta que envolve os estudantes"
       ],
     },
     {
       title: "MÓDULO 4 - Como realizar o encerramento e consolidar os registros das atividades resultantes do programa",
       topics: [
-        "Tópicos ainda a definir...",
+        "Autoavaliação e Avaliação em Pares",
+        "Culminância do Projeto: Valor e Sugestões práticas",
+        "Uso dos Registros na Culminância",
+        "Conclusão"
       ],
     },
   ]

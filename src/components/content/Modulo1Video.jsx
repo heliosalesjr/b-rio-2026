@@ -2,8 +2,9 @@
 import React from 'react'
 import { useEffect, useRef } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
-
+import Link from 'next/link'
 import { FaLink } from 'react-icons/fa'
+
 
 const Modulo1Video = () => {
 
@@ -49,7 +50,7 @@ const Modulo1Video = () => {
       </div>
 
       {/* Subtítulo */}
-      <h3 className="text-xl font-semibold text-slate-800">Saiba mais</h3>
+      <h3 className="text-xl font-semibold text-slate-800">Saiba mais no "<Link className="text-blue-800 underline" href="https://porque.com.br/">Por Quê?</Link>", portal de Economia ligado à BEĨ Educação</h3>
 
       {/* Cards com links */}
       <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 text-left">
